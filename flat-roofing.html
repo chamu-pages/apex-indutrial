@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Expert Flat Roofing - Apex Industrial</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Teko:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea580c", // Safety Orange
+                        "primary-hover": "#c2410c",
+                        "background-dark": "#0f172a", // Dark Slate
+                        "surface-dark": "#1e293b", // Lighter Slate for cards
+                        "surface-darker": "#020617", // Almost black
+                        "text-main": "#f1f5f9",
+                        "text-muted": "#94a3b8",
+                        "border-tech": "#334155", // Technical border color
+                    },
+                    fontFamily: {
+                        "display": ["Oswald", "sans-serif"], // Brutalist Header Font
+                        "mono-tech": ["Teko", "sans-serif"], // Secondary Industrial Font
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px", // Sharp corners for industrial feel
+                        "md": "2px",
+                        "lg": "4px",
+                        "xl": "4px",
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        'grain': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border: 1px solid #1e293b;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ea580c;
+        }
+
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        ::selection {
+            background-color: #ea580c;
+            color: white;
+        }
+
+        .industrial-input:focus {
+            border-bottom-color: #ea580c;
+            box-shadow: none;
+        }
+
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .map-filter {
+            filter: grayscale(100%) invert(90%) contrast(120%);
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            pointer-events: all;
+            width: 24px;
+            height: 24px;
+            -webkit-appearance: none;
+            background-color: #ea580c;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.3);
+            cursor: ew-resize;
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #ea580c;
+            pointer-events: none;
+            z-index: 20;
+        }
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background-color: #ea580c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            z-index: 30;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark font-body text-text-main antialiased selection:bg-primary selection:text-white">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-grain">
+        <header class="fixed top-0 z-50 w-full glass-nav transition-all duration-300">
+            <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="flex size-10 items-center justify-center bg-primary text-white border border-orange-400/30">
+                        <span class="material-symbols-outlined !text-3xl">roofing</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-display text-2xl font-bold uppercase leading-none tracking-tight text-white">APEX</span>
+                        <span
+                            class="font-mono-tech text-lg leading-none uppercase tracking-widest text-primary">Industrial</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
+                        href="index.html">Home</a>
+                    <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
+                        href="about.html">About Us</a>
+                    <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
+                        href="projects.html">Projects</a>
+                    <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
+                        href="about.html#reviews">Reviews</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a class="group flex items-center gap-3 overflow-hidden bg-primary px-5 py-2.5 transition-all hover:bg-primary-hover border border-orange-500/50"
+                        href="tel:02079460123">
+                        <span class="material-symbols-outlined animate-pulse text-white">phone_in_talk</span>
+                        <div class="flex flex-col items-start">
+                            <span class="font-mono-tech text-sm uppercase leading-none text-white/80">Emergency
+                                24/7</span>
+                            <span class="font-display text-lg font-bold leading-none text-white tracking-wide">020 7946
+                                0123</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow pt-20">
+            <section
+                class="relative flex min-h-[400px] items-center justify-center overflow-hidden bg-background-dark py-20">
+                <div class="absolute inset-0 z-0">
+                    <img alt="Macro detail of high-quality slate roofing material"
+                        class="h-full w-full object-cover object-center grayscale contrast-125 brightness-50"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnmwitsXYvhrU8mC8CnTgw8VwoBoP21YrdRDcQUkFqzjfZ70H6GQiu3KeHYIRPSb-PxqF7o8wpbOjjfSchd8vLepUeF3e_UN77mAvMcgAS9zniswhNZJz_RSGmawjLf26gaEPJcCBcqgneH7SFaO2ORdGwyBoNMvQZkE7Ph48-EPRHK4Txp7mP2wM5Cts95EZ711OGgCYogAJ1FFI14xepmfRYqOF4DNiw4euPiB8VP7cx5HjXUhsNPhzHcNaioZDGmWPiqaXxBwye" />
+                    <div class="absolute inset-0 bg-slate-900/90 mix-blend-multiply"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent">
+                    </div>
+                    <div class="absolute inset-0 bg-grain opacity-20 mix-blend-overlay"></div>
+                </div>
+                <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                    <div class="inline-flex items-center gap-2 border-b border-primary pb-2 mb-6">
+                        <span class="h-2 w-2 bg-primary"></span>
+                        <span class="font-mono-tech text-xl uppercase tracking-[0.2em] text-primary">Services</span>
+                        <span class="h-2 w-2 bg-primary"></span>
+                    </div>
+                    <h1
+                        class="font-display text-5xl font-bold uppercase tracking-tight text-white sm:text-6xl lg:text-7xl mb-4">
+                        Expert Flat Roofing
+                    </h1>
+                    <p class="mx-auto max-w-2xl text-lg text-slate-400 font-light tracking-wide">
+                        Industrial-grade flat roof systems engineered for longevity. Complete replacement, repair, and
+                        advanced coating solutions.
+                    </p>
+                </div>
+            </section>
+            <section class="relative border-y border-slate-800 bg-surface-darker py-24 overflow-hidden">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-16 items-start">
+                        <div class="space-y-8">
+                            <h2 class="font-mono-tech text-5xl text-primary uppercase tracking-tight leading-none">The
+                                Flat Roof<br /><span class="text-white">Failure</span></h2>
+                            <div class="h-1 w-24 bg-primary/50"></div>
+                            <p class="text-xl text-slate-400 font-light leading-relaxed">
+                                Pooling water. Blistering felt. Seams that split under the London sun. Traditional flat
+                                roofing has a reputation for failure because corners are cut.
+                            </p>
+                            <ul class="space-y-4 mt-6">
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-red-500 shrink-0 mt-1">close</span>
+                                    <span class="text-slate-400 text-lg">Inadequate drainage gradients leading to
+                                        ponding</span>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-red-500 shrink-0 mt-1">close</span>
+                                    <span class="text-slate-400 text-lg">Cheap bitumen that cracks in winter</span>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-red-500 shrink-0 mt-1">close</span>
+                                    <span class="text-slate-400 text-lg">Poorly detailed flashing around vents and
+                                        skylights</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-surface-dark border border-slate-800 p-10 relative">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-3xl rounded-full"></div>
+                            <h3 class="font-display text-3xl text-white uppercase mb-6 flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-4xl">architecture</span>
+                                The Apex Solution
+                            </h3>
+                            <p class="text-slate-300 mb-6 leading-relaxed">
+                                We don't just patch; we re-engineer. Our flat roofing systems use <strong>GRP
+                                    Fibreglass</strong>, <strong>EPDM Rubber</strong>, or <strong>High-Performance
+                                    Torch-on Felt</strong> designed for industrial lifespans.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="border border-slate-700 bg-background-dark p-4">
+                                    <span class="block font-mono-tech text-2xl text-primary mb-1">Seamless</span>
+                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Technology</span>
+                                </div>
+                                <div class="border border-slate-700 bg-background-dark p-4">
+                                    <span class="block font-mono-tech text-2xl text-primary mb-1">25 Year</span>
+                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Warranty</span>
+                                </div>
+                                <div class="border border-slate-700 bg-background-dark p-4">
+                                    <span class="block font-mono-tech text-2xl text-primary mb-1">UV Stable</span>
+                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Coating</span>
+                                </div>
+                                <div class="border border-slate-700 bg-background-dark p-4">
+                                    <span class="block font-mono-tech text-2xl text-primary mb-1">ISO 9001</span>
+                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Certified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-background-dark border-b border-slate-800">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="mb-12 flex items-end justify-between">
+                        <div>
+                            <h2 class="font-display text-4xl font-bold uppercase text-white">Project Case Study</h2>
+                            <p class="text-primary font-mono-tech text-xl uppercase tracking-widest mt-2">Warehouse
+                                Refit // East London</p>
+                        </div>
+                        <div class="hidden md:flex gap-2">
+                            <button
+                                class="h-12 w-12 border border-slate-700 hover:border-primary hover:text-primary text-white flex items-center justify-center transition-colors"><span
+                                    class="material-symbols-outlined">arrow_back</span></button>
+                            <button
+                                class="h-12 w-12 border border-slate-700 hover:border-primary hover:text-primary text-white flex items-center justify-center transition-colors"><span
+                                    class="material-symbols-outlined">arrow_forward</span></button>
+                        </div>
+                    </div>
+                    <div class="border border-slate-700 bg-surface-dark p-1">
+                        <div class="relative w-full aspect-video overflow-hidden select-none">
+                            <img alt="New EPDM rubber flat roof installation"
+                                class="absolute inset-0 h-full w-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAsemZqMTtZvsZ9UCU4PELT_t1Z0-3X_8U29E-dPcPXLR_ScMOjLsCHVdaLBmOFhxvFThAS26RveaNyQk4XeYt6JmLrErtx2QxCd0rmwQlzvfIwTDD2iXpekyfHTj00rS6JRjAyTFL35d00HB9L-31UpIphRYgz3x0RMo0syMKMMhkCvKrlCn8gTW53-V5PsPoRj2AoADeYJq-TxJSNtsFU5cGouAqP-vNNOmrLlvCFuHNr-oTzz4V30K7KX5-VOrYRtvkwyFouF_g" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
+                                After</div>
+                            <div class="absolute inset-0 w-full overflow-hidden bg-slate-800" id="slider3-before"
+                                style="clip-path: inset(0 50% 0 0);">
+                                <img alt="Damaged flat roof with pooling water"
+                                    class="absolute inset-0 h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4GP5g2Wr7Za8V2MzUQRfHKeMku5vGiKbHLfJuEE1uK8c8AKVH_-3xNjql-wd268F6yOpBKgBlwT7rz3o5hkVNtfbegnD9zzTXgAKvIBPS-XQFw42uoCK-ekH4KQBlox-N6-UUVogpU63Msj1HrUrPIBIIcnUIoCJ807eXXy3HQDWTZc0xEEc2B71tv5eW9JOQA3qelAFqDeqWvHlLX_Zc4G9F-kkkYNiI6Yqe_vxgd0IxtmTl1L5cY6l19pKVQotM6CtuholY8u5H" />
+                                <div
+                                    class="absolute top-4 left-4 bg-slate-900/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
+                                    Before</div>
+                            </div>
+                            <div class="slider-handle" id="slider3-handle" style="left: 50%;">
+                                <div class="slider-button">
+                                    <span class="material-symbols-outlined text-white text-xl">compare_arrows</span>
+                                </div>
+                            </div>
+                            <input class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100"
+                                min="0" oninput="moveSlider(this.value, 'slider3')" type="range" value="50" />
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-6 flex flex-wrap gap-8 text-sm text-slate-500 font-mono-tech text-lg uppercase tracking-wide">
+                        <span><strong class="text-white">Duration:</strong> 5 Days</span>
+                        <span><strong class="text-white">Area:</strong> 450 Sq Meters</span>
+                        <span><strong class="text-white">Material:</strong> High-Grade EPDM</span>
+                        <span><strong class="text-white">Budget:</strong> £25k - £30k</span>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-surface-dark border-b border-slate-800">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="font-display text-3xl font-bold uppercase text-white">Verified Flat Roof Reviews</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div
+                            class="bg-background-dark border border-slate-700 p-8 relative hover:border-primary transition-colors duration-300">
+                            <div class="flex items-center gap-1 mb-6 text-primary">
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                            </div>
+                            <h4 class="font-bold text-white uppercase mb-2">"Garage Roof Replacement"</h4>
+                            <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Replaced an old asbestos
+                                garage roof with a new GRP system. The finish is immaculate, absolutely solid. No more
+                                leaks during the heavy rains last week."</p>
+                            <div class="flex items-center gap-3 border-t border-slate-800 pt-4 mt-auto">
+                                <div
+                                    class="h-8 w-8 bg-slate-800 rounded-full flex items-center justify-center text-xs font-bold text-white">
+                                    JP</div>
+                                <div>
+                                    <p class="text-xs font-bold text-white uppercase">James P.</p>
+                                    <p class="text-[10px] text-slate-500 font-mono-tech uppercase">London SE1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-background-dark border border-slate-700 p-8 relative hover:border-primary transition-colors duration-300">
+                            <div class="flex items-center gap-1 mb-6 text-primary">
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                            </div>
+                            <h4 class="font-bold text-white uppercase mb-2">"Kitchen Extension Flat Roof"</h4>
+                            <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Apex identified why our
+                                extension was cold and damp. They installed new insulation boards and a rubber roof. The
+                                room is instantly warmer."</p>
+                            <div class="flex items-center gap-3 border-t border-slate-800 pt-4 mt-auto">
+                                <div
+                                    class="h-8 w-8 bg-slate-800 rounded-full flex items-center justify-center text-xs font-bold text-white">
+                                    MK</div>
+                                <div>
+                                    <p class="text-xs font-bold text-white uppercase">Martin K.</p>
+                                    <p class="text-[10px] text-slate-500 font-mono-tech uppercase">Camden</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-background-dark border border-slate-700 p-8 relative hover:border-primary transition-colors duration-300">
+                            <div class="flex items-center gap-1 mb-6 text-primary">
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                                <span class="material-symbols-outlined text-sm fill-current">star</span>
+                            </div>
+                            <h4 class="font-bold text-white uppercase mb-2">"Commercial Flat Roof Repair"</h4>
+                            <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Fast response to an emergency
+                                leak in our office building. They patched it immediately and quoted for a full
+                                resurfacing which they completed over the weekend."</p>
+                            <div class="flex items-center gap-3 border-t border-slate-800 pt-4 mt-auto">
+                                <div
+                                    class="h-8 w-8 bg-slate-800 rounded-full flex items-center justify-center text-xs font-bold text-white">
+                                    AT</div>
+                                <div>
+                                    <p class="text-xs font-bold text-white uppercase">Alan T.</p>
+                                    <p class="text-[10px] text-slate-500 font-mono-tech uppercase">Canary Wharf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-background-dark">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-16">
+                        <div>
+                            <h2 class="font-display text-3xl font-bold uppercase text-white mb-8">Common Questions</h2>
+                            <div class="space-y-4">
+                                <details
+                                    class="group bg-surface-dark border border-slate-700 open:border-primary transition-all">
+                                    <summary
+                                        class="flex cursor-pointer items-center justify-between p-6 font-medium text-white">
+                                        <span class="font-display text-lg uppercase tracking-wide">How much does a new
+                                            flat roof cost?</span>
+                                        <span
+                                            class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary">expand_more</span>
+                                    </summary>
+                                    <div class="border-t border-slate-700 p-6 pt-0 text-slate-400 leading-relaxed">
+                                        <p class="mt-4">Costs vary by material and size. Typically, a high-quality EPDM
+                                            or GRP system starts from £80-£100 per square meter. We provide detailed,
+                                            itemized quotes after a free site survey so there are no surprises.</p>
+                                    </div>
+                                </details>
+                                <details
+                                    class="group bg-surface-dark border border-slate-700 open:border-primary transition-all">
+                                    <summary
+                                        class="flex cursor-pointer items-center justify-between p-6 font-medium text-white">
+                                        <span class="font-display text-lg uppercase tracking-wide">How long does
+                                            installation take?</span>
+                                        <span
+                                            class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary">expand_more</span>
+                                    </summary>
+                                    <div class="border-t border-slate-700 p-6 pt-0 text-slate-400 leading-relaxed">
+                                        <p class="mt-4">An average residential garage or extension (approx 20sqm)
+                                            usually takes 1-2 days. Larger commercial projects will have a bespoke
+                                            timeline provided. We work efficiently to minimize disruption.</p>
+                                    </div>
+                                </details>
+                                <details
+                                    class="group bg-surface-dark border border-slate-700 open:border-primary transition-all">
+                                    <summary
+                                        class="flex cursor-pointer items-center justify-between p-6 font-medium text-white">
+                                        <span class="font-display text-lg uppercase tracking-wide">What is your
+                                            warranty?</span>
+                                        <span
+                                            class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary">expand_more</span>
+                                    </summary>
+                                    <div class="border-t border-slate-700 p-6 pt-0 text-slate-400 leading-relaxed">
+                                        <p class="mt-4">We offer a standard 10-year insurance-backed guarantee on all
+                                            workmanship. Our premium GRP and EPDM systems often come with manufacturer
+                                            warranties extending up to 20 or 25 years.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="font-display text-3xl font-bold uppercase text-white mb-8">Service Areas</h2>
+                            <div class="bg-surface-dark border border-slate-700 p-1">
+                                <div class="aspect-video w-full bg-slate-800 relative overflow-hidden">
+                                    <iframe allowfullscreen=""
+                                        class="w-full h-full map-filter opacity-70 hover:opacity-100 transition-opacity"
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.728106568!2d-0.24168153966601438!3d51.52877184087595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1715423856281!5m2!1sen!2suk"
+                                        style="border:0;"></iframe>
+                                </div>
+                                <div class="p-6">
+                                    <h4 class="text-white font-bold uppercase mb-4">Active Project Clusters:</h4>
+                                    <ul
+                                        class="grid grid-cols-2 gap-2 text-sm text-slate-400 font-mono-tech text-lg uppercase tracking-wide">
+                                        <li class="flex items-center gap-2"><span
+                                                class="h-1.5 w-1.5 bg-primary rounded-full"></span> Kensington &amp;
+                                            Chelsea</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="h-1.5 w-1.5 bg-primary rounded-full"></span> Hammersmith</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="h-1.5 w-1.5 bg-primary rounded-full"></span> Greenwich</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="h-1.5 w-1.5 bg-primary rounded-full"></span> Hackney</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="h-1.5 w-1.5 bg-primary rounded-full"></span> Wandsworth</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="h-1.5 w-1.5 bg-primary rounded-full"></span> Islington</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative bg-surface-darker py-24" id="quote-form">
+                <div class="absolute left-0 top-0 h-full w-full overflow-hidden opacity-10 pointer-events-none">
+                    <div
+                        class="absolute -right-[10%] bottom-[20%] h-[600px] w-[600px] rounded-full bg-primary blur-[150px]">
+                    </div>
+                </div>
+                <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="border border-slate-700 bg-surface-dark p-8 shadow-2xl sm:p-12 relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-primary/50"></div>
+                        <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-primary/50"></div>
+                        <div class="mb-12 text-center relative z-10">
+                            <h2 class="font-display text-4xl font-bold uppercase text-white sm:text-5xl">Start Your
+                                Project</h2>
+                            <p class="mt-3 text-primary font-mono-tech text-xl tracking-widest uppercase">Expert
+                                assessment. Detailed Quote.</p>
+                        </div>
+                        <form class="space-y-8 relative z-10">
+                            <div class="grid gap-8 sm:grid-cols-2">
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="name">Full Name</label>
+                                    <input
+                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                        id="name" placeholder="John Doe" type="text" />
+                                </div>
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="phone">Phone Number</label>
+                                    <input
+                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                        id="phone" placeholder="07123 456789" type="tel" />
+                                </div>
+                            </div>
+                            <div class="grid gap-8 sm:grid-cols-2">
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="postcode">Postcode</label>
+                                    <input
+                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                        id="postcode" placeholder="E.g. SW1A 1AA" type="text" />
+                                </div>
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="service">Service Needed</label>
+                                    <select
+                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white focus:ring-0 transition-colors [&amp;&gt;option]:bg-slate-800"
+                                        id="service">
+                                        <option selected="">Flat Roofing</option>
+                                        <option>Emergency Repair</option>
+                                        <option>Roof Inspection</option>
+                                        <option>Guttering</option>
+                                        <option>New Roof</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space-y-2 group">
+                                <label
+                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                    for="message">Tell us about the issue</label>
+                                <textarea
+                                    class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors resize-none"
+                                    id="message" placeholder="Briefly describe the damage or leak..."
+                                    rows="3"></textarea>
+                            </div>
+                            <button
+                                class="mt-8 w-full bg-primary py-5 text-center font-display text-xl font-bold uppercase tracking-widest text-white transition-all hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] border border-transparent"
+                                type="button">
+                                Get Free Quote
+                            </button>
+                            <p class="text-center text-xs text-slate-600 font-mono-tech uppercase tracking-wide">Secure
+                                Data Transmission // Privacy Protected</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-surface-darker border-t border-slate-800 pt-20 pb-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 mb-16">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="flex size-10 items-center justify-center border border-slate-700 bg-slate-900 text-primary">
+                                <span class="material-symbols-outlined !text-2xl">roofing</span>
+                            </div>
+                            <span class="font-display text-2xl font-bold uppercase tracking-tight text-white">APEX <span
+                                    class="text-primary">Roofing</span></span>
+                        </div>
+                        <p class="text-sm text-slate-500 font-light leading-relaxed">London's premier industrial roofing
+                            experts. Dedicated to quality craftsmanship and military-grade emergency response.</p>
+                        <div class="flex gap-4 pt-2">
+                            <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
+                                    class="material-symbols-outlined">social_leaderboard</span></a>
+                            <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
+                                    class="material-symbols-outlined">water_drop</span></a>
+                            <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
+                                    class="material-symbols-outlined">photo_camera</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
+                            Services</h3>
+                        <ul class="space-y-3 text-sm text-slate-400 font-mono-tech text-lg uppercase tracking-wide">
+                            <li><a class="hover:text-primary transition-colors" href="#">Emergency Repairs</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Flat Roofing</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Slate &amp; Tiling</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Guttering</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Commercial Roofing</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3
+                            class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
+                            Areas</h3>
+                        <ul class="space-y-3 text-sm text-slate-400 font-mono-tech text-lg uppercase tracking-wide">
+                            <li><a class="hover:text-primary transition-colors" href="#">Central London</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">North London</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">East London</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">South West</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Greater London</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3
+                            class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
+                            Contact</h3>
+                        <ul class="space-y-5 text-sm text-slate-400">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span>
+                                <span class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span>
+                                <a class="hover:text-white transition-colors font-display font-bold tracking-wider"
+                                    href="tel:02079460123">020 7946 0123</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">mail</span>
+                                <a class="hover:text-white transition-colors tracking-wide"
+                                    href="mailto:info@apexroofing.co.uk">info@apexroofing.co.uk</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-xs text-slate-600 uppercase tracking-widest font-mono-tech">© 2024 Apex Roofing
+                        London Ltd. All rights reserved.</p>
+                    <div class="flex gap-8 text-xs text-slate-600 uppercase tracking-widest font-mono-tech">
+                        <a class="hover:text-slate-400 transition-colors" href="privacy.html">Privacy Policy</a>
+                        <a class="hover:text-slate-400 transition-colors" href="privacy.html">Terms of Service</a>
+                        <a class="hover:text-slate-400 transition-colors" href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function moveSlider(value, sliderId) {
+            const beforeImage = document.getElementById(`${sliderId}-before`);
+            const handle = document.getElementById(`${sliderId}-handle`);
+            if (beforeImage) {
+                beforeImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+            }
+            if (handle) {
+                handle.style.left = `${value}%`;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            moveSlider(50, 'slider3');
+        });
+    </script>
+</body>
+
+</html>
