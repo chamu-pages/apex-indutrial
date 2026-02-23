@@ -5,49 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Premium Roofing - Expert Roof Repairs in London</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Teko:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#ea580c", // Safety Orange
-                        "primary-hover": "#c2410c",
-                        "background-dark": "#0f172a", // Dark Slate
-                        "surface-dark": "#1e293b", // Lighter Slate for cards
-                        "surface-darker": "#020617", // Almost black
-                        "text-main": "#f1f5f9",
-                        "text-muted": "#94a3b8",
-                        "border-tech": "#334155", // Technical border color
-                    },
-                    fontFamily: {
-                        "display": ["Oswald", "sans-serif"], // Brutalist Header Font
-                        "mono-tech": ["Teko", "sans-serif"], // Secondary Industrial Font
-                        "body": ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0px", // Sharp corners for industrial feel
-                        "md": "2px",
-                        "lg": "4px",
-                        "xl": "4px",
-                        "full": "9999px"
-                    },
-                    backgroundImage: {
-                        'grain': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%2210.5%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.5%22/%3E%3C/svg%3E')",
-                    }
-                },
-            },
-        }
-    </script>
+    <link href="assets/css/style.css" rel="stylesheet" />
     <style>
         ::-webkit-scrollbar {
             width: 8px;
@@ -141,7 +99,7 @@
                 <div class="flex items-center gap-4">
                     <a class="group flex items-center gap-3 overflow-hidden bg-primary px-5 py-2.5 transition-all hover:bg-primary-hover border border-orange-500/50"
                         href="tel:02079460123">
-                        <span class="material-symbols-outlined animate-pulse text-white">phone_in_talk</span>
+                        <svg class=" animate-pulse text-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
                         <div class="flex flex-col items-start">
                             <span class="font-mono-tech text-sm uppercase leading-none text-white/80">Emergency
                                 24/7</span>
@@ -159,7 +117,7 @@
                     <img alt="Professional roofer working on a residential roof structure with safety gear at dusk"
                         class="h-full w-full object-cover object-center grayscale-[30%] contrast-125 brightness-75"
                         data-alt="Professional roofer working on a residential roof structure with safety gear"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqTxO2KL0PixcN0kHhK4a6MV2s7Y4Q1r6dQSVhCOiWWe_pv70zDOaXUE7bBPtnK6ZSrt2z4lR8FcJXfKKverojBImFagYslqrtfABXs3lBZjTupQhv98rvdLJFKBNRusOOC-eCHzQS56ki-c-OaK4X00_34Li63lIQV4i-M5tTQC2TUlxIZkmilDee4JrbgsHx-X6DFLM-ERK-0GmOCGp4K-eFMpi7S_VS2N-pzE8mAGgim3bVGzy3zC3SDJgmfT3VZ-nQa7z9v_U" />
+                        src="assets/img/about-bg.png" />
                     <div class="absolute inset-0 bg-slate-900/80 mix-blend-multiply"></div>
                     <!-- Rule 2: seamless bottom fade -->
                     <div class="absolute inset-0 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900"></div>
@@ -183,15 +141,15 @@
                         </p>
                         <div class="mb-12 flex flex-wrap gap-6 sm:gap-10 border-t border-slate-700/50 pt-8">
                             <div class="flex items-center gap-3 text-slate-300">
-                                <span class="material-symbols-outlined text-primary">engineering</span>
+                                <svg class=" text-primary" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M42-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71 0-127.5 18T142-266q-9 5-14.5 14t-5.5 20v32Zm127-287q-47-47-47-113h-10q-9 0-14.5-5.5T172-620q0-9 5.5-14.5T192-640h10q0-45 22-81t58-57v38q0 9 5.5 14.5T302-720q9 0 14.5-5.5T322-740v-54q9-3 19-4.5t21-1.5q11 0 21 1.5t19 4.5v54q0 9 5.5 14.5T422-720q9 0 14.5-5.5T442-740v-38q36 21 58 57t22 81h10q9 0 14.5 5.5T552-620q0 9-5.5 14.5T532-600h-10q0 66-47 113t-113 47q-66 0-113-47Zm169.5-56.5Q442-567 442-600H282q0 33 23.5 56.5T362-520q33 0 56.5-23.5ZM662-360l-6-30q-6-2-11.5-4.5T634-402l-28 10-20-36 22-20v-24l-22-20 20-36 28 10q4-4 10-7t12-5l6-30h40l6 30q6 2 12 5t10 7l28-10 20 36-22 20v24l22 20-20 36-28-10q-5 5-10.5 7.5T708-390l-6 30h-40Zm41-79q9-9 9-21t-9-21q-9-9-21-9t-21 9q-9 9-9 21t9 21q9 9 21 9t21-9Zm51-121-8-42q-9-3-16.5-7.5T716-620l-42 14-28-48 34-30q-2-5-2-8v-16q0-3 2-8l-34-30 28-48 42 14q6-6 13.5-10.5T746-798l8-42h56l8 42q9 3 16.5 7.5T848-780l42-14 28 48-34 30q2 5 2 8v16q0 3-2 8l34 30-28 48-42-14q-6 6-13.5 10.5T818-602l-8 42h-56Zm63.5-104.5Q832-679 832-700t-14.5-35.5Q803-750 782-750t-35.5 14.5Q732-721 732-700t14.5 35.5Q761-650 782-650t35.5-14.5ZM362-200Z"/></svg>
                                 <span class="font-display uppercase tracking-wider text-sm">24/7 Rapid Response</span>
                             </div>
                             <div class="flex items-center gap-3 text-slate-300">
-                                <span class="material-symbols-outlined text-primary">verified_user</span>
+                                <svg class=" text-primary" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m438-338 226-226-57-57-169 169-84-84-57 57 141 141Zm42 258q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/></svg>
                                 <span class="font-display uppercase tracking-wider text-sm">Fully Insured</span>
                             </div>
                             <div class="flex items-center gap-3 text-slate-300">
-                                <span class="material-symbols-outlined text-primary">workspace_premium</span>
+                                <svg class=" text-primary" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm410-350q70-70 70-170t-70-170q-70-70-170-70t-170 70q-70 70-70 170t70 170q70 70 170 70t170-70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/></svg>
                                 <span class="font-display uppercase tracking-wider text-sm">10yr Guarantee</span>
                             </div>
                         </div>
@@ -219,19 +177,19 @@
                             class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-40 hover:opacity-80 transition-opacity duration-300">
                             <div
                                 class="flex items-center gap-2 text-xl font-display font-bold text-slate-300 uppercase tracking-wide">
-                                <span class="material-symbols-outlined text-3xl text-slate-400">verified_user</span>
+                                <svg class=" text-3xl text-slate-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m438-338 226-226-57-57-169 169-84-84-57 57 141 141Zm42 258q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/></svg>
                                 Trustpilot
                             </div>
                             <div class="h-8 w-px bg-white/10 hidden sm:block"></div>
                             <div
                                 class="flex items-center gap-2 text-xl font-display font-bold text-slate-300 uppercase tracking-wide">
-                                <span class="material-symbols-outlined text-3xl text-slate-400">construction</span>
+                                <svg class=" text-3xl text-slate-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"/></svg>
                                 Checkatrade
                             </div>
                             <div class="h-8 w-px bg-white/10 hidden sm:block"></div>
                             <div
                                 class="flex items-center gap-2 text-xl font-display font-bold text-slate-300 uppercase tracking-wide">
-                                <span class="material-symbols-outlined text-3xl text-slate-400">shield</span>
+                                <svg class=" text-3xl text-slate-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/></svg>
                                 FMB
                             </div>
                         </div>
@@ -265,7 +223,7 @@
                         <div class="h-48 w-full overflow-hidden relative">
                             <img alt="Close up of slate roof tiles texture"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale contrast-125 brightness-75"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0yq1gbzyYxN-aORuLpcxvAMdvHgDMFxDGfh1uH_LL-22HjlfhxdCV5GM169hqZijWcpbyZVnoae_jc7fFxY5kWYHezYSgZxPweF28dLisbq2hB39gUwSCeguhjfb5hZAEjjVq20w4KYD7hpJVf0atoB3yy4G40Ser17OoTaqP62ScWXO598_K5ODrRexd20RRTHDOOCspHYjNSApKHgsQ3QRpF-SrUaYqAdIYldvjTajXIKmyY4b5uBFJglgB7yZA508Ea1tUkkOu" />
+                                src="assets/img/project-2-before.png" />
                             <div class="absolute inset-0 bg-slate-900/50 group-hover:bg-primary/20 transition-colors">
                             </div>
                             <div
@@ -294,7 +252,7 @@
                         <div class="h-48 w-full overflow-hidden relative">
                             <img alt="Flat roofing material texture detail"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale contrast-125 brightness-75"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEc9jaQhIa6EGn0wQWWzaBYomr8u9NhOxuEBZV5c2VUZareefU8hE-gbTMFRexyuNP3jX0SBhZL_fgYoQ6QgB81iJpW425LN-lcWSXaxwfRvzmAX_SB0fEf5voKq3vCmGZYbdooXygG-s0VQnQw4Mf7MFNnHKbZnBUayE6qgsn14Yuw6jt65Z3SNmhuXrS6VZIPFKpM6NNS8xVmdphDqoHHVNl7w5hIEuqLEUIeCwjThI3o7HHQ1SbW4I3d1mTguZlnh5_pl4QU-Vo" />
+                                src="assets/img/project-1-before.png" />
                             <div class="absolute inset-0 bg-slate-900/50 group-hover:bg-primary/20 transition-colors">
                             </div>
                             <div
@@ -323,7 +281,7 @@
                         <div class="h-48 w-full overflow-hidden relative">
                             <img alt="Metal guttering detail with water"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale contrast-125 brightness-75"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDNh9fVRdy-SM7cB7NADGDgaYspoJSrxYk1YAnWS7e4klCvSbbI8nSFgC2d2NK-JDqlDTHN9CDCoGjLscTDKqUPcMetu1GWEOy7kbeJ1moGp5GmuWJ2ObI8p1oejrrCsjA-TYBlgH-2C-lQz72c3cDVXF8iZauPXvztUwLQQ4FtsxX49xJdfgF6EO2ZY5HzuovfdGyUCTROwVVw4q13-ywi13u-PIYmhS3GUpJBMtnqKsjWjWgxTGmEFIPQn1CBI2hfP43T_9837n" />
+                                src="assets/img/project-2-after.png" />
                             <div class="absolute inset-0 bg-slate-900/50 group-hover:bg-primary/20 transition-colors">
                             </div>
                             <div
@@ -352,7 +310,7 @@
                         <div class="h-48 w-full overflow-hidden relative">
                             <img alt="Red brick chimney detail"
                                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale contrast-125 brightness-75"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA0mjfc2aHbvILUERRizvp-RMXdDBsXQJzcsNkCbu_1LkiRMwsdqs5zZ6njS1ZVHYt_0m2UIZxMtxAsbA9ksjpIDj9AQXQiaHDppeQXFAA-fZnRjsWxAywQkcM3i8vzO_kQtd2tlJjvqhnPmFcaVA4BP5Z9FgvYa8SVJ7xyCe7FP-9Tr7qBPNY6jtx-53Z0Gycaxrl6X2EBiVfL_KIsomtJL2Xtjf_f7XRqx5Kw3ETh1KI9PfyXhmdZ3iC5EbABxzgQndW3TF3Yqnc" />
+                                src="assets/img/project-1-after.png" />
                             <div class="absolute inset-0 bg-slate-900/50 group-hover:bg-primary/20 transition-colors">
                             </div>
                             <div
@@ -410,11 +368,11 @@
                             <div class="relative overflow-hidden border border-white/10 bg-slate-900 p-8">
                                 <div class="relative z-10">
                                     <div class="mb-4 flex text-primary">
-                                        <span class="material-symbols-outlined text-xl">star</span>
-                                        <span class="material-symbols-outlined text-xl">star</span>
-                                        <span class="material-symbols-outlined text-xl">star</span>
-                                        <span class="material-symbols-outlined text-xl">star</span>
-                                        <span class="material-symbols-outlined text-xl">star</span>
+                                        <svg class=" text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                                        <svg class=" text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                                        <svg class=" text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                                        <svg class=" text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                                        <svg class=" text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
                                     </div>
                                     <span
                                         class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Field
@@ -426,7 +384,7 @@
                                         <div
                                             class="h-10 w-10 bg-white/5 border border-white/10 overflow-hidden grayscale flex items-center justify-center">
                                             <img alt="Portrait of happy customer" class="h-full w-full object-cover"
-                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdmbxi9XbrwCJi7poP5se9jy4KsSW4QIWErKb39iDHUc4KhMQfIsj9N7-XLFbSbNedoASzvQf8G80ulweSKbF1mHWZkdfynK7hFHMDfw9NOmeqcjyiZAq7F51V51eEokWOrKhEzxRuAakER4H2wYcD17f-RGcHp3tEW0KF-Qgn8TlxOgSRVYdfiwc-p-X_26DS9dhS7WjIsj1bbGmGirqUwzthNi507rFGVcYF-7kN10UqGWt-XmyzaV1jadXV5naP_tvPOGgNywhr" />
+                                                src="assets/img/review-avatar.png" />
                                         </div>
                                         <div>
                                             <p
@@ -558,9 +516,7 @@
                                 <span
                                     class="material-symbols-outlined !text-2xl group-hover:scale-110 transition-transform">roofing</span>
                             </div>
-                            <span
-                                class="font-display text-2xl font-bold uppercase tracking-tight text-white group-hover:text-slate-200 transition-colors">APEX
-                                <span class="text-primary">Roofing</span></span>
+                            <img src="assets/img/apex-industrial-logo.webp" alt="Apex Industrial Roofing Logo" class="h-8">
                         </a>
                         <p class="text-sm text-slate-500 font-light leading-relaxed">London's premier industrial roofing
                             experts. Dedicated to quality craftsmanship and military-grade emergency response.</p>
@@ -603,16 +559,16 @@
                             Contact</h3>
                         <ul class="space-y-5 text-sm text-slate-400">
                             <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span>
+                                <svg class=" text-primary shrink-0 text-lg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
                                 <span class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span>
+                                <svg class=" text-primary shrink-0 text-lg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M162-120q-18 0-30-12t-12-30v-162q0-13 9-23.5t23-14.5l138-28q14-2 28.5 2.5T342-374l94 94q38-22 72-48.5t65-57.5q33-32 60.5-66.5T681-524l-97-98q-8-8-11-19t-1-27l26-140q2-13 13-22.5t25-9.5h162q18 0 30 12t12 30q0 125-54.5 247T631-329Q531-229 409-174.5T162-120Zm556-480q17-39 26-79t14-81h-88l-18 94 66 66ZM360-244l-66-66-94 20v88q41-3 81-14t79-28Zm358-356ZM360-244Z"/></svg>
                                 <a class="hover:text-white transition-colors font-display font-bold tracking-wider"
                                     href="tel:02079460123">020 7946 0123</a>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">mail</span>
+                                <svg class=" text-primary shrink-0 text-lg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
                                 <a class="hover:text-white transition-colors tracking-wide"
                                     href="mailto:info@apexroofing.co.uk">info@apexroofing.co.uk</a>
                             </li>

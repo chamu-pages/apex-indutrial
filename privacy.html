@@ -5,49 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Legal &amp; Privacy Policy - Apex Industrial</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Teko:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#ea580c", // Safety Orange
-                        "primary-hover": "#c2410c",
-                        "background-dark": "#0f172a", // Dark Slate
-                        "surface-dark": "#1e293b", // Lighter Slate for cards
-                        "surface-darker": "#020617", // Almost black
-                        "text-main": "#f1f5f9",
-                        "text-muted": "#94a3b8",
-                        "border-tech": "#334155", // Technical border color
-                    },
-                    fontFamily: {
-                        "display": ["Oswald", "sans-serif"], // Brutalist Header Font
-                        "mono-tech": ["Teko", "sans-serif"], // Secondary Industrial Font
-                        "body": ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0px", // Sharp corners for industrial feel
-                        "md": "2px",
-                        "lg": "4px",
-                        "xl": "4px",
-                        "full": "9999px"
-                    },
-                    backgroundImage: {
-                        'grain': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
-                    }
-                },
-            },
-        }
-    </script>
+    <link href="assets/css/style.css" rel="stylesheet" />
     <style>
         ::-webkit-scrollbar {
             width: 8px;
@@ -189,7 +147,7 @@
                 <div class="flex items-center gap-4">
                     <a class="group flex items-center gap-3 overflow-hidden bg-primary px-5 py-2.5 transition-all hover:bg-primary-hover border border-orange-500/50"
                         href="tel:02079460123">
-                        <span class="material-symbols-outlined animate-pulse text-white">phone_in_talk</span>
+                        <svg class=" animate-pulse text-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
                         <div class="flex flex-col items-start">
                             <span class="font-mono-tech text-sm uppercase leading-none text-white/80">Emergency
                                 24/7</span>
@@ -206,7 +164,7 @@
                 <div class="absolute inset-0 z-0">
                     <img alt="Dark industrial texture"
                         class="h-full w-full object-cover object-center grayscale contrast-125 brightness-40"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqTxO2KL0PixcN0kHhK4a6MV2s7Y4Q1r6dQSVhCOiWWe_pv70zDOaXUE7bBPtnK6ZSrt2z4lR8FcJXfKKverojBImFagYslqrtfABXs3lBZjTupQhv98rvdLJFKBNRusOOC-eCHzQS56ki-c-OaK4X00_34Li63lIQV4i-M5tTQC2TUlxIZkmilDee4JrbgsHx-X6DFLM-ERK-0GmOCGp4K-eFMpi7S_VS2N-pzE8mAGgim3bVGzy3zC3SDJgmfT3VZ-nQa7z9v_U" />
+                        src="assets/img/about-bg.png" />
                     <div class="absolute inset-0 bg-slate-900/80 mix-blend-multiply"></div>
                     <!-- Rule 2: seamless bottom fade -->
                     <div class="absolute inset-0 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900"></div>
@@ -361,9 +319,7 @@
                                 <span
                                     class="material-symbols-outlined !text-2xl group-hover:scale-110 transition-transform">roofing</span>
                             </div>
-                            <span
-                                class="font-display text-2xl font-bold uppercase tracking-tight text-white group-hover:text-slate-200 transition-colors">APEX
-                                <span class="text-primary">Roofing</span></span>
+                            <img src="assets/img/apex-industrial-logo.webp" alt="Apex Industrial Roofing Logo" class="h-8">
                         </a>
                         <p class="text-sm text-slate-500 font-light leading-relaxed">London's premier industrial roofing
                             experts. Dedicated to quality craftsmanship and military-grade emergency response.</p>

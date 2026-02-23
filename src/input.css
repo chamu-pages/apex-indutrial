@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* oswald-regular - latin */
 @font-face {
     font-display: swap;

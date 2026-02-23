@@ -5,49 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Roofing Projects Before &amp; After Gallery - Apex Industrial</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Teko:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#ea580c", // Safety Orange
-                        "primary-hover": "#c2410c",
-                        "background-dark": "#0f172a", // Dark Slate
-                        "surface-dark": "#1e293b", // Lighter Slate for cards
-                        "surface-darker": "#020617", // Almost black
-                        "text-main": "#f1f5f9",
-                        "text-muted": "#94a3b8",
-                        "border-tech": "#334155", // Technical border color
-                    },
-                    fontFamily: {
-                        "display": ["Oswald", "sans-serif"], // Brutalist Header Font
-                        "mono-tech": ["Teko", "sans-serif"], // Secondary Industrial Font
-                        "body": ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0px", // Sharp corners for industrial feel
-                        "md": "2px",
-                        "lg": "4px",
-                        "xl": "4px",
-                        "full": "9999px"
-                    },
-                    backgroundImage: {
-                        'grain': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
-                    }
-                },
-            },
-        }
-    </script>
+    <link href="assets/css/style.css" rel="stylesheet" />
     <style>
         ::-webkit-scrollbar {
             width: 8px;
@@ -166,7 +124,7 @@
                 <div class="flex items-center gap-4">
                     <a class="group flex items-center gap-3 overflow-hidden bg-primary px-5 py-2.5 transition-all hover:bg-primary-hover border border-orange-500/50"
                         href="tel:02079460123">
-                        <span class="material-symbols-outlined animate-pulse text-white">phone_in_talk</span>
+                        <svg class=" animate-pulse text-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
                         <div class="flex flex-col items-start">
                             <span class="font-mono-tech text-sm uppercase leading-none text-white/80">Emergency
                                 24/7</span>
@@ -183,7 +141,7 @@
                 <div class="absolute inset-0 z-0">
                     <img alt="Dark industrial texture"
                         class="h-full w-full object-cover object-center grayscale contrast-125 brightness-50"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqTxO2KL0PixcN0kHhK4a6MV2s7Y4Q1r6dQSVhCOiWWe_pv70zDOaXUE7bBPtnK6ZSrt2z4lR8FcJXfKKverojBImFagYslqrtfABXs3lBZjTupQhv98rvdLJFKBNRusOOC-eCHzQS56ki-c-OaK4X00_34Li63lIQV4i-M5tTQC2TUlxIZkmilDee4JrbgsHx-X6DFLM-ERK-0GmOCGp4K-eFMpi7S_VS2N-pzE8mAGgim3bVGzy3zC3SDJgmfT3VZ-nQa7z9v_U" />
+                        src="assets/img/about-bg.png" />
                     <div class="absolute inset-0 bg-slate-900/90 mix-blend-multiply"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent">
                     </div>
@@ -214,7 +172,7 @@
                                 ontouchmove="updateSlider(event, 'slider1')">
                                 <img alt="Completed slate roof in Chelsea"
                                     class="absolute inset-0 h-full w-full object-cover"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0yq1gbzyYxN-aORuLpcxvAMdvHgDMFxDGfh1uH_LL-22HjlfhxdCV5GM169hqZijWcpbyZVnoae_jc7fFxY5kWYHezYSgZxPweF28dLisbq2hB39gUwSCeguhjfb5hZAEjjVq20w4KYD7hpJVf0atoB3yy4G40Ser17OoTaqP62ScWXO598_K5ODrRexd20RRTHDOOCspHYjNSApKHgsQ3QRpF-SrUaYqAdIYldvjTajXIKmyY4b5uBFJglgB7yZA508Ea1tUkkOu" />
+                                    src="assets/img/project-2-before.png" />
                                 <div
                                     class="absolute top-4 right-4 bg-primary/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                     After</div>
@@ -222,14 +180,14 @@
                                     id="slider1-before">
                                     <img alt="Damaged slate roof before repair"
                                         class="absolute inset-0 h-full max-w-none w-[200%] object-cover filter grayscale contrast-125 brightness-75"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA0mjfc2aHbvILUERRizvp-RMXdDBsXQJzcsNkCbu_1LkiRMwsdqs5zZ6njS1ZVHYt_0m2UIZxMtxAsbA9ksjpIDj9AQXQiaHDppeQXFAA-fZnRjsWxAywQkcM3i8vzO_kQtd2tlJjvqhnPmFcaVA4BP5Z9FgvYa8SVJ7xyCe7FP-9Tr7qBPNY6jtx-53Z0Gycaxrl6X2EBiVfL_KIsomtJL2Xtjf_f7XRqx5Kw3ETh1KI9PfyXhmdZ3iC5EbABxzgQndW3TF3Yqnc" />
+                                        src="assets/img/project-1-after.png" />
                                     <div
                                         class="absolute top-4 left-4 bg-slate-900/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                         Before</div>
                                 </div>
                                 <div class="slider-handle" id="slider1-handle" style="left: 50%;">
                                     <div class="slider-button">
-                                        <span class="material-symbols-outlined text-white text-xl">compare_arrows</span>
+                                        <svg class=" text-white text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m320-160-56-57 103-103H80v-80h287L264-503l56-57 200 200-200 200Zm320-240L440-600l200-200 56 57-103 103h287v80H593l103 103-56 57Z"/></svg>
                                     </div>
                                 </div>
                                 <input class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100"
@@ -267,7 +225,7 @@
                             <div class="relative w-full aspect-[4/3] overflow-hidden select-none">
                                 <img alt="New flat roof membrane in Canary Wharf"
                                     class="absolute inset-0 h-full w-full object-cover"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEc9jaQhIa6EGn0wQWWzaBYomr8u9NhOxuEBZV5c2VUZareefU8hE-gbTMFRexyuNP3jX0SBhZL_fgYoQ6QgB81iJpW425LN-lcWSXaxwfRvzmAX_SB0fEf5voKq3vCmGZYbdooXygG-s0VQnQw4Mf7MFNnHKbZnBUayE6qgsn14Yuw6jt65Z3SNmhuXrS6VZIPFKpM6NNS8xVmdphDqoHHVNl7w5hIEuqLEUIeCwjThI3o7HHQ1SbW4I3d1mTguZlnh5_pl4QU-Vo" />
+                                    src="assets/img/project-1-before.png" />
                                 <div
                                     class="absolute top-4 right-4 bg-primary/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                     After</div>
@@ -275,14 +233,14 @@
                                     id="slider2-before">
                                     <img alt="Leaking flat roof with puddles"
                                         class="absolute inset-0 h-full max-w-none w-[200%] object-cover filter grayscale contrast-150 brightness-50 sepia-[.3]"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDNh9fVRdy-SM7cB7NADGDgaYspoJSrxYk1YAnWS7e4klCvSbbI8nSFgC2d2NK-JDqlDTHN9CDCoGjLscTDKqUPcMetu1GWEOy7kbeJ1moGp5GmuWJ2ObI8p1oejrrCsjA-TYBlgH-2C-lQz72c3cDVXF8iZauPXvztUwLQQ4FtsxX49xJdfgF6EO2ZY5HzuovfdGyUCTROwVVw4q13-ywi13u-PIYmhS3GUpJBMtnqKsjWjWgxTGmEFIPQn1CBI2hfP43T_9837n" />
+                                        src="assets/img/project-2-after.png" />
                                     <div
                                         class="absolute top-4 left-4 bg-slate-900/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                         Before</div>
                                 </div>
                                 <div class="slider-handle" id="slider2-handle" style="left: 50%;">
                                     <div class="slider-button">
-                                        <span class="material-symbols-outlined text-white text-xl">compare_arrows</span>
+                                        <svg class=" text-white text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m320-160-56-57 103-103H80v-80h287L264-503l56-57 200 200-200 200Zm320-240L440-600l200-200 56 57-103 103h287v80H593l103 103-56 57Z"/></svg>
                                     </div>
                                 </div>
                                 <input class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100"
@@ -319,7 +277,7 @@
                         <div class="group flex flex-col border border-border-tech bg-surface-dark/50">
                             <div class="relative w-full aspect-[4/3] overflow-hidden select-none">
                                 <img alt="Repointed chimney stack" class="absolute inset-0 h-full w-full object-cover"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA0mjfc2aHbvILUERRizvp-RMXdDBsXQJzcsNkCbu_1LkiRMwsdqs5zZ6njS1ZVHYt_0m2UIZxMtxAsbA9ksjpIDj9AQXQiaHDppeQXFAA-fZnRjsWxAywQkcM3i8vzO_kQtd2tlJjvqhnPmFcaVA4BP5Z9FgvYa8SVJ7xyCe7FP-9Tr7qBPNY6jtx-53Z0Gycaxrl6X2EBiVfL_KIsomtJL2Xtjf_f7XRqx5Kw3ETh1KI9PfyXhmdZ3iC5EbABxzgQndW3TF3Yqnc" />
+                                    src="assets/img/project-1-after.png" />
                                 <div
                                     class="absolute top-4 right-4 bg-primary/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                     After</div>
@@ -327,14 +285,14 @@
                                     id="slider3-before">
                                     <img alt="Crumbling chimney brickwork"
                                         class="absolute inset-0 h-full max-w-none w-[200%] object-cover filter grayscale contrast-150 brightness-75 blur-[1px]"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqTxO2KL0PixcN0kHhK4a6MV2s7Y4Q1r6dQSVhCOiWWe_pv70zDOaXUE7bBPtnK6ZSrt2z4lR8FcJXfKKverojBImFagYslqrtfABXs3lBZjTupQhv98rvdLJFKBNRusOOC-eCHzQS56ki-c-OaK4X00_34Li63lIQV4i-M5tTQC2TUlxIZkmilDee4JrbgsHx-X6DFLM-ERK-0GmOCGp4K-eFMpi7S_VS2N-pzE8mAGgim3bVGzy3zC3SDJgmfT3VZ-nQa7z9v_U" />
+                                        src="assets/img/about-bg.png" />
                                     <div
                                         class="absolute top-4 left-4 bg-slate-900/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                         Before</div>
                                 </div>
                                 <div class="slider-handle" id="slider3-handle" style="left: 50%;">
                                     <div class="slider-button">
-                                        <span class="material-symbols-outlined text-white text-xl">compare_arrows</span>
+                                        <svg class=" text-white text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m320-160-56-57 103-103H80v-80h287L264-503l56-57 200 200-200 200Zm320-240L440-600l200-200 56 57-103 103h287v80H593l103 103-56 57Z"/></svg>
                                     </div>
                                 </div>
                                 <input class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100"
@@ -370,7 +328,7 @@
                         <div class="group flex flex-col border border-border-tech bg-surface-dark/50">
                             <div class="relative w-full aspect-[4/3] overflow-hidden select-none">
                                 <img alt="Clean copper guttering" class="absolute inset-0 h-full w-full object-cover"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDNh9fVRdy-SM7cB7NADGDgaYspoJSrxYk1YAnWS7e4klCvSbbI8nSFgC2d2NK-JDqlDTHN9CDCoGjLscTDKqUPcMetu1GWEOy7kbeJ1moGp5GmuWJ2ObI8p1oejrrCsjA-TYBlgH-2C-lQz72c3cDVXF8iZauPXvztUwLQQ4FtsxX49xJdfgF6EO2ZY5HzuovfdGyUCTROwVVw4q13-ywi13u-PIYmhS3GUpJBMtnqKsjWjWgxTGmEFIPQn1CBI2hfP43T_9837n" />
+                                    src="assets/img/project-2-after.png" />
                                 <div
                                     class="absolute top-4 right-4 bg-primary/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                     After</div>
@@ -378,14 +336,14 @@
                                     id="slider4-before">
                                     <img alt="Rusted and blocked guttering"
                                         class="absolute inset-0 h-full max-w-none w-[200%] object-cover filter grayscale contrast-125 brightness-50"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEc9jaQhIa6EGn0wQWWzaBYomr8u9NhOxuEBZV5c2VUZareefU8hE-gbTMFRexyuNP3jX0SBhZL_fgYoQ6QgB81iJpW425LN-lcWSXaxwfRvzmAX_SB0fEf5voKq3vCmGZYbdooXygG-s0VQnQw4Mf7MFNnHKbZnBUayE6qgsn14Yuw6jt65Z3SNmhuXrS6VZIPFKpM6NNS8xVmdphDqoHHVNl7w5hIEuqLEUIeCwjThI3o7HHQ1SbW4I3d1mTguZlnh5_pl4QU-Vo" />
+                                        src="assets/img/project-1-before.png" />
                                     <div
                                         class="absolute top-4 left-4 bg-slate-900/90 px-3 py-1 font-mono-tech text-white uppercase tracking-widest text-sm z-10">
                                         Before</div>
                                 </div>
                                 <div class="slider-handle" id="slider4-handle" style="left: 50%;">
                                     <div class="slider-button">
-                                        <span class="material-symbols-outlined text-white text-xl">compare_arrows</span>
+                                        <svg class=" text-white text-xl" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m320-160-56-57 103-103H80v-80h287L264-503l56-57 200 200-200 200Zm320-240L440-600l200-200 56 57-103 103h287v80H593l103 103-56 57Z"/></svg>
                                     </div>
                                 </div>
                                 <input class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100"
@@ -560,16 +518,16 @@
                             Contact</h3>
                         <ul class="space-y-5 text-sm text-slate-400">
                             <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span>
+                                <svg class=" text-primary shrink-0 text-lg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
                                 <span class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span>
+                                <svg class=" text-primary shrink-0 text-lg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M162-120q-18 0-30-12t-12-30v-162q0-13 9-23.5t23-14.5l138-28q14-2 28.5 2.5T342-374l94 94q38-22 72-48.5t65-57.5q33-32 60.5-66.5T681-524l-97-98q-8-8-11-19t-1-27l26-140q2-13 13-22.5t25-9.5h162q18 0 30 12t12 30q0 125-54.5 247T631-329Q531-229 409-174.5T162-120Zm556-480q17-39 26-79t14-81h-88l-18 94 66 66ZM360-244l-66-66-94 20v88q41-3 81-14t79-28Zm358-356ZM360-244Z"/></svg>
                                 <a class="hover:text-white transition-colors font-display font-bold tracking-wider"
                                     href="tel:02079460123">020 7946 0123</a>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">mail</span>
+                                <svg class=" text-primary shrink-0 text-lg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
                                 <a class="hover:text-white transition-colors tracking-wide"
                                     href="mailto:info@apexroofing.co.uk">info@apexroofing.co.uk</a>
                             </li>
