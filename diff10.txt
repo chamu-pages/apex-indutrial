@@ -1,0 +1,83 @@
+﻿diff --git a/about.html b/about.html
+index 8749549..f398eab 100644
+--- a/about.html
++++ b/about.html
+@@ -201,7 +201,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="font-mono-tech uppercase mb-2 block tracking-widest text-xl text-primary">Our
+                                     Principle:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Apex Industrial was founded on a simple principle: roofs should be engineered, not
+@@ -212,7 +212,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="font-mono-tech uppercase mb-2 block tracking-widest text-xl text-primary">Our
+                                     Method:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Our team operates with military-grade precision. We don't cut corners. We don't use
+@@ -268,7 +268,7 @@
+                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">verified_user</span>
+                             </div>
+                             <span
+-                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
++                                class="font-mono-tech uppercase mb-3 block tracking-widest text-xl text-primary">Guarantee
+                                 01</span>
+                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">10-Year Insurance
+                                 Backed</h3>
+@@ -276,7 +276,7 @@
+                                 Every major installation comes with a comprehensive 10-year guarantee, backed by
+                                 independent insurance. If we're not around, you're still covered.
+                             </p>
+-                            <div class="mt-6 pt-6 border-t border-white/10">
++                            <div class="mt-6 pt-6 border-t border-white/10 font-mono-tech uppercase tracking-widest text-xl text-primary">
+                                 <span class="font-mono-tech text-sm text-primary uppercase tracking-wider">Certificate
+                                     Provided</span>
+                             </div>
+@@ -289,14 +289,14 @@
+                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">engineering</span>
+                             </div>
+                             <span
+-                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
++                                class="font-mono-tech uppercase mb-3 block tracking-widest text-xl text-primary">Guarantee
+                                 02</span>
+                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">Master Tradesmen</h3>
+                             <p class="text-slate-400 font-light leading-relaxed flex-grow">
+                                 No apprentices running the show. Your roof is handled by fully certified, senior
+                                 tradesmen with verified qualifications and years of field experience.
+                             </p>
+-                            <div class="mt-6 pt-6 border-t border-white/10">
++                            <div class="mt-6 pt-6 border-t border-white/10 font-mono-tech uppercase tracking-widest text-xl text-primary">
+                                 <span class="font-mono-tech text-sm text-primary uppercase tracking-wider">CSCS &amp;
+                                     NVQ Level 3</span>
+                             </div>
+@@ -309,14 +309,14 @@
+                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">layers</span>
+                             </div>
+                             <span
+-                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
++                                class="font-mono-tech uppercase mb-3 block tracking-widest text-xl text-primary">Guarantee
+                                 03</span>
+                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">Premium Materials</h3>
+                             <p class="text-slate-400 font-light leading-relaxed flex-grow">
+                                 We source exclusively from top-tier suppliers. Whether it's Welsh slate,
+                                 high-performance felt, or lead, we use materials engineered to last.
+                             </p>
+-                            <div class="mt-6 pt-6 border-t border-white/10">
++                            <div class="mt-6 pt-6 border-t border-white/10 font-mono-tech uppercase tracking-widest text-xl text-primary">
+                                 <span class="font-mono-tech text-sm text-primary uppercase tracking-wider">ISO 9001
+                                     Sourced</span>
+                             </div>
+@@ -374,7 +374,7 @@
+                                         DT</div>
+                                     <div>
+                                         <p class="text-sm font-bold text-white uppercase">David Thomas</p>
+-                                        <p class="text-xs text-primary font-mono-tech uppercase">Checkatrade Verified
++                                        <p class="font-mono-tech uppercase tracking-widest text-xl text-primary">Checkatrade Verified
+                                         </p>
+                                     </div>
+                                 </div>
