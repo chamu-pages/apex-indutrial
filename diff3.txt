@@ -1,0 +1,634 @@
+﻿diff --git a/about.html b/about.html
+index fdd0e94..5db9f88 100644
+--- a/about.html
++++ b/about.html
+@@ -126,7 +126,7 @@
+                         href="tel:02079460123">
+                         <span class="material-symbols-outlined animate-pulse text-white">phone_in_talk</span>
+                         <div class="flex flex-col items-start">
+-                            <span class="font-mono-tech text-sm uppercase leading-none text-white/80">Emergency
++                            <span class="font-mono-tech text-sm leading-none text-white/80">Emergency
+                                 24/7</span>
+                             <span class="font-display text-lg font-bold leading-none text-white tracking-wide">020 7946
+                                 0123</span>
+@@ -151,8 +151,7 @@
+                 <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                     <div class="inline-flex items-center gap-2 border-b border-primary pb-2 mb-6">
+                         <span class="h-2 w-2 bg-primary"></span>
+-                        <span class="font-mono-tech text-xl uppercase tracking-[0.2em] text-primary">[ Our Heritage
+-                            ]</span>
++                        <span class="font-mono-tech text-xl uppercase text-primary text-sm font-bold tracking-widest">Our Heritage</span>
+                         <span class="h-2 w-2 bg-primary"></span>
+                     </div>
+                     <h1
+@@ -193,8 +192,7 @@
+                             <!-- Rule 3: micro-label -->
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                                    Our Foundation ]</span>
++                                    class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Our Foundation</span>
+                                 <h2
+                                     class="font-display text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl">
+                                     Built To Withstand</h2>
+@@ -202,7 +200,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="font-mono-tech text-sm uppercase tracking-widest text-slate-400 mb-2 block">Our
+                                     Principle:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Apex Industrial was founded on a simple principle: roofs should be engineered, not
+@@ -213,7 +211,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="font-mono-tech text-sm uppercase tracking-widest text-slate-400 mb-2 block">Our
+                                     Method:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Our team operates with military-grade precision. We don't cut corners. We don't use
+@@ -252,11 +250,10 @@
+                 <div class="relative z-10">
+                     <!-- Rule 3: editorial section header -->
+                     <div class="mb-16">
+-                        <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                            Commitment ]</span>
++                        <span class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Commitment</span>
+                         <h2 class="font-display text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl">Our
+                             Ironclad Guarantees</h2>
+-                        <p class="mt-3 text-slate-500 font-mono-tech text-lg tracking-widest uppercase">Total peace of
++                        <p class="mt-3 text-slate-400 font-mono-tech text-lg tracking-widest uppercase">Total peace of
+                             mind. No exceptions.</p>
+                     </div>
+                     <!-- Rule 1: cards with border-white/10 instead of banded backgrounds -->
+@@ -269,7 +266,7 @@
+                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">verified_user</span>
+                             </div>
+                             <span
+-                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
++                                class="font-mono-tech text-sm uppercase tracking-widest text-primary mb-3 block">Guarantee
+                                 01</span>
+                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">10-Year Insurance
+                                 Backed</h3>
+@@ -290,7 +287,7 @@
+                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">engineering</span>
+                             </div>
+                             <span
+-                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
++                                class="font-mono-tech text-sm uppercase tracking-widest text-primary mb-3 block">Guarantee
+                                 02</span>
+                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">Master Tradesmen</h3>
+                             <p class="text-slate-400 font-light leading-relaxed flex-grow">
+@@ -310,7 +307,7 @@
+                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">layers</span>
+                             </div>
+                             <span
+-                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
++                                class="font-mono-tech text-sm uppercase tracking-widest text-primary mb-3 block">Guarantee
+                                 03</span>
+                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">Premium Materials</h3>
+                             <p class="text-slate-400 font-light leading-relaxed flex-grow">
+@@ -337,19 +334,18 @@
+                             <div>
+                                 <!-- Rule 3: micro-label -->
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                                    Field Reports ]</span>
++                                    class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Field Reports</span>
+                                 <h2
+                                     class="font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl">
+                                     Client Validations</h2>
+-                                <p class="mt-2 text-slate-400 font-mono-tech text-lg uppercase tracking-wide">Rated
++                                <p class="mt-2 text-slate-300 font-mono-tech text-lg tracking-wide">Rated
+                                     Excellent across London</p>
+                             </div>
+                             <div class="flex gap-4">
+                                 <div class="flex items-center gap-2 border border-white/10 bg-white/5 px-4 py-2">
+                                     <span class="material-symbols-outlined text-primary text-xl">star</span>
+                                     <span class="font-bold text-white">4.9/5</span>
+-                                    <span class="text-xs text-slate-400 uppercase tracking-wide">Average Rating</span>
++                                    <span class="text-sm text-slate-300 tracking-wide">Average Rating</span>
+                                 </div>
+                             </div>
+                         </div>
+@@ -374,8 +370,8 @@
+                                         class="size-10 bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 font-bold">
+                                         DT</div>
+                                     <div>
+-                                        <p class="text-sm font-bold text-white uppercase">David Thomas</p>
+-                                        <p class="text-xs text-primary font-mono-tech uppercase">Checkatrade Verified
++                                        <p class="text-sm font-bold text-white">David Thomas</p>
++                                        <p class="text-sm text-primary font-mono-tech">Checkatrade Verified
+                                         </p>
+                                     </div>
+                                 </div>
+@@ -400,8 +396,8 @@
+                                         class="size-10 bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 font-bold">
+                                         SL</div>
+                                     <div>
+-                                        <p class="text-sm font-bold text-white uppercase">Sarah Lewis</p>
+-                                        <p class="text-xs text-primary font-mono-tech uppercase">Trustpilot Verified</p>
++                                        <p class="text-sm font-bold text-white">Sarah Lewis</p>
++                                        <p class="text-sm text-primary font-mono-tech">Trustpilot Verified</p>
+                                     </div>
+                                 </div>
+                             </div>
+@@ -425,8 +421,8 @@
+                                         class="size-10 bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 font-bold">
+                                         MR</div>
+                                     <div>
+-                                        <p class="text-sm font-bold text-white uppercase">Michael Ross</p>
+-                                        <p class="text-xs text-primary font-mono-tech uppercase">Google Review</p>
++                                        <p class="text-sm font-bold text-white">Michael Ross</p>
++                                        <p class="text-sm text-primary font-mono-tech">Google Review</p>
+                                     </div>
+                                 </div>
+                             </div>
+@@ -445,8 +441,7 @@
+                     <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-primary/50"></div>
+                     <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-primary/50"></div>
+                     <div class="mb-12 text-center relative z-10">
+-                        <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                            Initiate Contact ]</span>
++                        <span class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Initiate Contact</span>
+                         <h2 class="font-display text-4xl font-bold uppercase text-white sm:text-5xl">Request Quote</h2>
+                         <p class="mt-3 text-slate-400 font-mono-tech text-xl tracking-widest uppercase">No obligation.
+                             Fast response guaranteed.</p>
+@@ -455,7 +450,7 @@
+                         <div class="grid gap-8 sm:grid-cols-2">
+                             <div class="space-y-2 group">
+                                 <label
+-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                    class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                     for="name">Full Name</label>
+                                 <input
+                                     class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+@@ -463,7 +458,7 @@
+                             </div>
+                             <div class="space-y-2 group">
+                                 <label
+-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                    class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                     for="phone">Phone Number</label>
+                                 <input
+                                     class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+@@ -473,7 +468,7 @@
+                         <div class="grid gap-8 sm:grid-cols-2">
+                             <div class="space-y-2 group">
+                                 <label
+-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                    class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                     for="postcode">Postcode</label>
+                                 <input
+                                     class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+@@ -481,7 +476,7 @@
+                             </div>
+                             <div class="space-y-2 group">
+                                 <label
+-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                    class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                     for="service">Service Needed</label>
+                                 <select
+                                     class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white focus:ring-0 transition-colors [&>option]:bg-slate-900"
+@@ -496,7 +491,7 @@
+                         </div>
+                         <div class="space-y-2 group">
+                             <label
+-                                class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                 for="message">Tell us about the issue</label>
+                             <textarea
+                                 class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors resize-none"
+@@ -505,7 +500,7 @@
+                         <button
+                             class="mt-8 w-full bg-primary py-5 text-center font-display text-xl font-bold uppercase tracking-widest text-white transition-all hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] border border-transparent"
+                             type="button">Get Free Quote</button>
+-                        <p class="text-center text-xs text-slate-600 font-mono-tech uppercase tracking-wide">Secure Data
++                        <p class="text-center text-sm text-slate-300 font-mono-tech tracking-wide">Secure Data
+                             Transmission // Privacy Protected</p>
+                     </form>
+                 </div>
+@@ -525,14 +520,14 @@
+                                 class="font-display text-2xl font-bold uppercase tracking-tight text-white group-hover:text-slate-200 transition-colors">APEX
+                                 <span class="text-primary">Roofing</span></span>
+                         </a>
+-                        <p class="text-sm text-slate-500 font-light leading-relaxed">London's premier industrial roofing
++                        <p class="text-sm text-slate-400 font-light leading-relaxed">London's premier industrial roofing
+                             experts. Dedicated to quality craftsmanship and military-grade emergency response.</p>
+                         <div class="flex gap-4 pt-2">
+-                            <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
++                            <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                     class="material-symbols-outlined">social_leaderboard</span></a>
+-                            <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
++                            <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                     class="material-symbols-outlined">water_drop</span></a>
+-                            <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
++                            <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                     class="material-symbols-outlined">photo_camera</span></a>
+                         </div>
+                     </div>
+@@ -540,7 +535,7 @@
+                         <h3
+                             class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
+                             Services</h3>
+-                        <ul class="space-y-3 text-sm text-slate-400 font-mono-tech text-lg uppercase tracking-wide">
++                        <ul class="space-y-3 text-sm text-slate-300 font-mono-tech text-lg tracking-wide">
+                             <li><a class="hover:text-primary transition-colors" href="#">Emergency Repairs</a></li>
+                             <li><a class="hover:text-primary transition-colors" href="#">Flat Roofing</a></li>
+                             <li><a class="hover:text-primary transition-colors" href="#">Slate &amp; Tiling</a></li>
+@@ -552,7 +547,7 @@
+                         <h3
+                             class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
+                             Areas</h3>
+-                        <ul class="space-y-3 text-sm text-slate-400 font-mono-tech text-lg uppercase tracking-wide">
++                        <ul class="space-y-3 text-sm text-slate-300 font-mono-tech text-lg tracking-wide">
+                             <li><a class="hover:text-primary transition-colors" href="#">Central London</a></li>
+                             <li><a class="hover:text-primary transition-colors" href="#">North London</a></li>
+                             <li><a class="hover:text-primary transition-colors" href="#">East London</a></li>
+@@ -567,7 +562,7 @@
+                         <ul class="space-y-5 text-sm text-slate-400">
+                             <li class="flex items-start gap-3"><span
+                                     class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span><span
+-                                    class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span></li>
++                                    class="tracking-wide">123 High Street, London,<br />SW1A 1AA</span></li>
+                             <li class="flex items-center gap-3"><span
+                                     class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span><a
+                                     class="hover:text-white transition-colors font-display font-bold tracking-wider"
+@@ -580,9 +575,9 @@
+                     </div>
+                 </div>
+                 <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+-                    <p class="text-xs text-slate-600 uppercase tracking-widest font-mono-tech">┬⌐ 2024 Apex Roofing
++                    <p class="text-xs text-slate-400 uppercase tracking-widest font-mono-tech">┬⌐ 2024 Apex Roofing
+                         London Ltd. All rights reserved.</p>
+-                    <div class="flex gap-8 text-xs text-slate-600 uppercase tracking-widest font-mono-tech">
++                    <div class="flex gap-8 text-xs text-slate-400 uppercase tracking-widest font-mono-tech">
+                         <a class="hover:text-slate-400 transition-colors" href="privacy.html">Privacy Policy</a>
+                         <a class="hover:text-slate-400 transition-colors" href="privacy.html">Terms of Service</a>
+                         <a class="hover:text-slate-400 transition-colors" href="#">Sitemap</a>
+diff --git a/flat-roofing.html b/flat-roofing.html
+index b831213..846a2a7 100644
+--- a/flat-roofing.html
++++ b/flat-roofing.html
+@@ -175,7 +175,7 @@
+                         href="tel:02079460123">
+                         <span class="material-symbols-outlined animate-pulse text-white">phone_in_talk</span>
+                         <div class="flex flex-col items-start">
+-                            <span class="font-mono-tech text-sm uppercase leading-none text-white/80">Emergency
++                            <span class="font-mono-tech text-sm leading-none text-white/80">Emergency
+                                 24/7</span>
+                             <span class="font-display text-lg font-bold leading-none text-white tracking-wide">020 7946
+                                 0123</span>
+@@ -199,7 +199,7 @@
+                 <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                     <div class="inline-flex items-center gap-2 border-b border-primary pb-2 mb-6">
+                         <span class="h-2 w-2 bg-primary"></span>
+-                        <span class="font-mono-tech text-xl uppercase tracking-[0.2em] text-primary">[ Services ]</span>
++                        <span class="font-mono-tech text-xl uppercase text-primary text-sm font-bold tracking-widest">Services</span>
+                         <span class="h-2 w-2 bg-primary"></span>
+                     </div>
+                     <h1
+@@ -213,7 +213,7 @@
+                     <div class="mt-10 flex flex-col gap-4 sm:flex-row justify-center relative z-20">
+                         <a href="#quote"
+                             class="flex h-16 min-w-[220px] items-center justify-center bg-primary px-8 font-display text-lg font-bold uppercase tracking-widest text-white transition-all hover:bg-primary-hover hover:-translate-y-1 border border-transparent">
+-                            REQUEST FREE QUOTE
++                            Request free quote
+                         </a>
+                         <a href="tel:02079460123"
+                             class="flex h-16 min-w-[220px] items-center justify-center border border-slate-500 bg-transparent px-8 font-display text-lg font-bold uppercase tracking-widest text-white hover:bg-white hover:text-slate-900 transition-all">
+@@ -235,15 +235,14 @@
+                         <div class="relative z-10 space-y-8">
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                                    The Problem ]</span>
++                                    class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">The Problem</span>
+                                 <h2 class="font-mono-tech text-4xl text-white uppercase tracking-tight leading-tight">
+                                     The Flat Roof<br /><span class="text-primary">Failure</span></h2>
+                                 <div class="h-1 w-16 bg-primary/50 mt-4"></div>
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Root
++                                    class="font-mono-tech text-sm uppercase tracking-widest text-slate-400 mb-2 block">Root
+                                     Cause:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Pooling water. Blistering felt. Seams that split under the London sun. Traditional
+@@ -255,19 +254,19 @@
+                                     <span
+                                         class="material-symbols-outlined text-red-500 shrink-0 mt-0.5 text-sm">close</span>
+                                     <span
+-                                        class="text-slate-400 text-sm font-mono-tech uppercase tracking-wide">Inadequate
++                                        class="text-slate-300 text-sm font-mono-tech tracking-wide">Inadequate
+                                         drainage gradients leading to ponding</span>
+                                 </li>
+                                 <li class="flex items-start gap-4 border-l border-red-500/30 pl-4">
+                                     <span
+                                         class="material-symbols-outlined text-red-500 shrink-0 mt-0.5 text-sm">close</span>
+-                                    <span class="text-slate-400 text-sm font-mono-tech uppercase tracking-wide">Cheap
++                                    <span class="text-slate-300 text-sm font-mono-tech tracking-wide">Cheap
+                                         bitumen that cracks in winter</span>
+                                 </li>
+                                 <li class="flex items-start gap-4 border-l border-red-500/30 pl-4">
+                                     <span
+                                         class="material-symbols-outlined text-red-500 shrink-0 mt-0.5 text-sm">close</span>
+-                                    <span class="text-slate-400 text-sm font-mono-tech uppercase tracking-wide">Poorly
++                                    <span class="text-slate-300 text-sm font-mono-tech tracking-wide">Poorly
+                                         detailed flashing around vents and skylights</span>
+                                 </li>
+                             </ul>
+@@ -282,8 +281,7 @@
+                         <div class="relative z-10 space-y-8">
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                                    The Solution ]</span>
++                                    class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">The Solution</span>
+                                 <h3 class="font-display text-3xl text-white uppercase flex items-center gap-3">
+                                     <span class="material-symbols-outlined text-primary text-4xl">architecture</span>
+                                     The Apex Solution
+@@ -292,7 +290,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="font-mono-tech text-sm uppercase tracking-widest text-slate-400 mb-2 block">Our
+                                     Systems:</span>
+                                 <p class="text-slate-300 leading-relaxed">
+                                     We don't just patch; we re-engineer. Our flat roofing systems use <strong>GRP
+@@ -303,19 +301,19 @@
+                             <div class="grid grid-cols-2 gap-px border border-white/10">
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">Seamless</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Technology</span>
++                                    <span class="text-xs text-slate-400 uppercase tracking-widest">Technology</span>
+                                 </div>
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">25 Year</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Warranty</span>
++                                    <span class="text-xs text-slate-400 uppercase tracking-widest">Warranty</span>
+                                 </div>
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">UV Stable</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Coating</span>
++                                    <span class="text-xs text-slate-400 uppercase tracking-widest">Coating</span>
+                                 </div>
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">ISO 9001</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Certified</span>
++                                    <span class="text-xs text-slate-400 uppercase tracking-widest">Certified</span>
+                                 </div>
+                             </div>
+                         </div>
+@@ -332,8 +330,7 @@
+                     <div class="relative z-10">
+                         <div class="mb-8">
+                             <!-- Rule 3: editorial label -->
+-                            <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                                Case Study ]</span>
++                            <span class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Case Study</span>
+                             <h2 class="font-display text-4xl font-bold uppercase text-white">Project Case Study</h2>
+                             <p class="text-primary font-mono-tech text-lg uppercase tracking-widest mt-2">Warehouse
+                                 Refit // East London</p>
+@@ -368,22 +365,22 @@
+                         <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-px border border-white/10">
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Duration</span>
++                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-400 block mb-1">Duration</span>
+                                 <span class="font-display text-xl font-bold text-white">5 Days</span>
+                             </div>
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Area</span>
++                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-400 block mb-1">Area</span>
+                                 <span class="font-display text-xl font-bold text-white">450 Sq.M</span>
+                             </div>
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Material</span>
++                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-400 block mb-1">Material</span>
+                                 <span class="font-display text-xl font-bold text-white">EPDM</span>
+                             </div>
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Budget</span>
++                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-400 block mb-1">Budget</span>
+                                 <span class="font-display text-xl font-bold text-white">┬ú25-30k</span>
+                             </div>
+                         </div>
+@@ -393,8 +390,8 @@
+             <!-- REVIEWS: Rule 1,3 -->
+             <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                 <div class="mb-12">
+-                    <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[ Field
+-                        Reports ]</span>
++                    <span class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Field
++                        Reports</span>
+                     <h2 class="font-display text-3xl font-bold uppercase text-white">Verified Flat Roof Reviews</h2>
+                 </div>
+                 <div class="grid md:grid-cols-3 gap-px border border-white/10">
+@@ -407,7 +404,7 @@
+                                 class="material-symbols-outlined text-sm">star</span>
+                         </div>
+                         <span
+-                            class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Review:</span>
++                            class="font-mono-tech text-sm uppercase tracking-widest text-slate-400 mb-2 block">Review:</span>
+                         <h4 class="font-bold text-white uppercase mb-2">"Garage Roof Replacement"</h4>
+                         <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Replaced an old asbestos garage
+                             roof with a new GRP system. The finish is immaculate, absolutely solid. No more leaks during
+@@ -417,8 +414,8 @@
+                                 class="h-8 w-8 bg-white/5 border border-white/10 flex items-center justify-center text-xs font-bold text-white">
+                                 JP</div>
+                             <div>
+-                                <p class="text-xs font-bold text-white uppercase">James P.</p>
+-                                <p class="text-[10px] text-slate-500 font-mono-tech uppercase">London SE1</p>
++                                <p class="text-sm font-bold text-white">James P.</p>
++                                <p class="text-[10px] text-slate-300 font-mono-tech">London SE1</p>
+                             </div>
+                         </div>
+                     </div>
+@@ -431,7 +428,7 @@
+                                 class="material-symbols-outlined text-sm">star</span>
+                         </div>
+                         <span
+-                            class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Review:</span>
++                            class="font-mono-tech text-sm uppercase tracking-widest text-slate-400 mb-2 block">Review:</span>
+                         <h4 class="font-bold text-white uppercase mb-2">"Kitchen Extension Flat Roof"</h4>
+                         <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Apex identified why our extension
+                             was cold and damp. They installed new insulation boards and a rubber roof. The room is
+@@ -441,8 +438,8 @@
+                                 class="h-8 w-8 bg-white/5 border border-white/10 flex items-center justify-center text-xs font-bold text-white">
+                                 MK</div>
+                             <div>
+-                                <p class="text-xs font-bold text-white uppercase">Martin K.</p>
+-                                <p class="text-[10px] text-slate-500 font-mono-tech uppercase">Camden</p>
++                                <p class="text-sm font-bold text-white">Martin K.</p>
++                                <p class="text-[10px] text-slate-300 font-mono-tech">Camden</p>
+                             </div>
+                         </div>
+                     </div>
+@@ -455,7 +452,7 @@
+                                 class="material-symbols-outlined text-sm">star</span>
+                         </div>
+                         <span
+-                            class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Review:</span>
++                            class="font-mono-tech text-sm uppercase tracking-widest text-slate-400 mb-2 block">Review:</span>
+                         <h4 class="font-bold text-white uppercase mb-2">"Commercial Flat Roof Repair"</h4>
+                         <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Fast response to an emergency
+                             leak in our office building. They patched it immediately and quoted for a full resurfacing
+@@ -465,8 +462,8 @@
+                                 class="h-8 w-8 bg-white/5 border border-white/10 flex items-center justify-center text-xs font-bold text-white">
+                                 AT</div>
+                             <div>
+-                                <p class="text-xs font-bold text-white uppercase">Alan T.</p>
+-                                <p class="text-[10px] text-slate-500 font-mono-tech uppercase">Canary Wharf</p>
++                                <p class="text-sm font-bold text-white">Alan T.</p>
++                                <p class="text-[10px] text-slate-300 font-mono-tech">Canary Wharf</p>
+                             </div>
+                         </div>
+                     </div>
+@@ -476,8 +473,7 @@
+             <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                 <div class="grid lg:grid-cols-2 gap-px border border-white/10">
+                     <div class="bg-white/5 p-10 lg:p-12">
+-                        <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[ FAQ
+-                            ]</span>
++                        <span class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Faq</span>
+                         <h2 class="font-display text-3xl font-bold uppercase text-white mb-8">Common Questions</h2>
+                         <div class="space-y-px">
+                             <details
+@@ -528,8 +524,7 @@
+                         </div>
+                     </div>
+                     <div class="bg-white/5 border-l border-white/10 p-10 lg:p-12">
+-                        <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+-                            Coverage ]</span>
++                        <span class="font-mono-tech text-sm uppercase text-primary mb-3 block font-bold tracking-widest">Coverage</span>
+                         <h2 class="font-display text-3xl font-bold uppercase text-white mb-8">Service Areas</h2>
+                         <div class="border border-white/10 p-1">
+                             <div class="aspect-video w-full bg-slate-800 relative overflow-hidden">
+@@ -542,7 +537,7 @@
+                             <div class="p-6 border-t border-white/10">
+                                 <h4 class="text-white font-bold uppercase mb-4">Active Project Clusters:</h4>
+                                 <ul
+-                                    class="grid grid-cols-2 gap-2 text-sm text-slate-400 font-mono-tech uppercase tracking-wide">
++                                    class="grid grid-cols-2 gap-2 text-sm text-slate-300 font-mono-tech tracking-wide">
+                                     <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 bg-primary"></span>
+                                         Kensington &amp; Chelsea</li>
+                                     <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 bg-primary"></span>
+@@ -582,7 +577,7 @@
+                             <div class="grid gap-8 sm:grid-cols-2">
+                                 <div class="space-y-2 group">
+                                     <label
+-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                        class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                         for="name">Full Name</label>
+                                     <input
+                                         class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+@@ -590,7 +585,7 @@
+                                 </div>
+                                 <div class="space-y-2 group">
+                                     <label
+-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                        class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                         for="phone">Phone Number</label>
+                                     <input
+                                         class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+@@ -600,7 +595,7 @@
+                             <div class="grid gap-8 sm:grid-cols-2">
+                                 <div class="space-y-2 group">
+                                     <label
+-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                        class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                         for="postcode">Postcode</label>
+                                     <input
+                                         class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+@@ -608,7 +603,7 @@
+                                 </div>
+                                 <div class="space-y-2 group">
+                                     <label
+-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                        class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                         for="service">Service Needed</label>
+                                     <select
+                                         class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white focus:ring-0 transition-colors [&amp;&gt;option]:bg-slate-800"
+@@ -623,7 +618,7 @@
+                             </div>
+                             <div class="space-y-2 group">
+                                 <label
+-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
++                                    class="text-xs font-bold uppercase tracking-widest text-slate-400 group-focus-within:text-primary transition-colors"
+                                     for="message">Tell us about the issue</label>
+                                 <textarea
+                                     class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors resize-none"
+@@ -635,7 +630,7 @@
+                                 type="button">
+                                 Get Free Quote
+                             </button>
+-                            <p class="text-center text-xs text-slate-600 font-mono-tech uppercase tracking-wide">Secure
++                            <p class="text-center text-sm text-slate-300 font-mono-tech tracking-wide">Secure
+                                 Data Transmission // Privacy Protected</p>
+                         </form>
+                     </div>
+@@ -656,14 +651,14 @@
+                             class="font-display text-2xl font-bold uppercase tracking-tight text-white group-hover:text-slate-200 transition-colors">APEX
+                             <span class="text-primary">Roofing</span></span>
+                     </a>
+-                    <p class="text-sm text-slate-500 font-light leading-relaxed">London's premier industrial roofing
++                    <p class="text-sm text-slate-400 font-light leading-relaxed">London's premier industrial roofing
+                         experts. Dedicated to quality craftsmanship and military-grade emergency response.</p>
+                     <div class="flex gap-4 pt-2">
+-                        <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
++                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                 class="material-symbols-outlined">social_leaderboard</span></a>
+-                        <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
++                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                 class="material-symbols-outlined">water_drop</span></a>
+-                        <a class="text-slate-600 hover:text-primary transition-colors" href="#"><span
++                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                 class="material-symbols-outlined">photo_camera</span></a>
+                     </div>
+                 </div>
+@@ -671,7 +666,7 @@
+                     <h3
+                         class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
+                         Services</h3>
+-                    <ul class="space-y-3 text-sm text-slate-400 font-mono-tech text-lg uppercase tracking-wide">
++                    <ul class="space-y-3 text-sm text-slate-300 font-mono-tech text-lg tracking-wide">
+                         <li><a class="hover:text-primary transition-colors" href="#">Emergency Repairs</a></li>
+                         <li><a class="hover:text-primary transition-colors" href="#">Flat Roofing</a></li>
+                         <li><a class="hover:text-primary transition-colors" href="#">Slate &amp; Tiling</a></li>
+@@ -683,7 +678,7 @@
+                     <h3
+                         class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
+                         Areas</h3>
+-                    <ul class="space-y-3 text-sm text-slate-400 font-mono-tech text-lg uppercase tracking-wide">
++                    <ul class="space-y-3 text-sm text-slate-300 font-mono-tech text-lg tracking-wide">
+                         <li><a class="hover:text-primary transition-colors" href="#">Central London</a></li>
+                         <li><a class="hover:text-primary transition-colors" href="#">North London</a></li>
+                         <li><a class="hover:text-primary transition-colors" href="#">East London</a></li>
+@@ -698,7 +693,7 @@
+                     <ul class="space-y-5 text-sm text-slate-400">
+                         <li class="flex items-start gap-3">
+                             <span class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span>
+-                            <span class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span>
++                            <span class="tracking-wide">123 High Street, London,<br />SW1A 1AA</span>
+                         </li>
+                         <li class="flex items-center gap-3">
+                             <span class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span>
+@@ -714,9 +709,9 @@
+                 </div>
+             </div>
+             <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+-                <p class="text-xs text-slate-600 uppercase tracking-widest font-mono-tech">┬⌐ 2024 Apex Roofing
++                <p class="text-xs text-slate-400 uppercase tracking-widest font-mono-tech">┬⌐ 2024 Apex Roofing
+                     London Ltd. All rights reserved.</p>
+-                <div class="flex gap-8 text-xs text-slate-600 uppercase tracking-widest font-mono-tech">
++                <div class="flex gap-8 text-xs text-slate-400 uppercase tracking-widest font-mono-tech">
+                     <a class="hover:text-slate-400 transition-colors" href="privacy.html">Privacy Policy</a>
+                     <a class="hover:text-slate-400 transition-colors" href="privacy.html">Terms of Service</a>
+                     <a class="hover:text-slate-400 transition-colors" href="#">Sitemap</a>
