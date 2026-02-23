@@ -8,12 +8,16 @@
 **Contact Phone:** 020 7946 0123
 **Contact Email:** info@apexroofing.co.uk
 **Location:** 123 High Street, London, SW1A 1AA
+**Base URL:** https://apexindustrial.pages.dev/
 
 ## Site Structure Map
 - **Home (/)**: Main landing page, emergency services overview, request quote form.
 - **About Us (/about.html)**: Company heritage, ironclad guarantees, core principles, and client reviews.
 - **Projects (/projects.html)**: Project portfolio featuring before/after sliders of recent industrial jobs.
-- **Flat Roofing (/flat-roofing.html)**: Detailed service page for precision flat roofing, materials used (GRP, EPDM), and service areas map.
+- **Emergency Repairs (/emergency-repairs.html)**: 24/7 rapid response for storm damage and leaks.
+- **Flat Roofing (/flat-roofing.html)**: Detailed service page for precision flat roofing, materials used (GRP, EPDM).
+- **Guttering (/guttering.html)**: Drainage solutions, cleaning, and replacement.
+- **Slate & Tile (/slate-tile.html)**: Heritage slate restoration and conservation compliant roofing.
 - **Privacy Policy (/privacy.html)**: Legal terms, data collection policy, and cookie usage.
 
 ## Services Offered
