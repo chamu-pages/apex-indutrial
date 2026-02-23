@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="dark" lang="en">
 
 <head>
@@ -67,7 +67,7 @@
         }
 
         .glass-nav {
-            background: rgba(15, 23, 42, 0.85);
+            background: rgba(15, 23, 42, 0.92);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -131,11 +131,23 @@
             height: 6px;
             background-color: #ea580c;
         }
+
+        /* Premium Industrial Slate  concrete dust texture */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+            opacity: 0.035;
+            mix-blend-mode: overlay;
+        }
     </style>
 </head>
 
-<body class="bg-background-dark font-body text-text-main antialiased selection:bg-primary selection:text-white">
-    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-grain">
+<body class="bg-slate-900 font-body text-text-main antialiased selection:bg-primary selection:text-white">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <header class="fixed top-0 z-50 w-full glass-nav transition-all duration-300">
             <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center gap-3">
@@ -151,8 +163,6 @@
                     </div>
                 </div>
                 <nav class="hidden md:flex items-center gap-8">
-                    <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
-                        href="index.html">Home</a>
                     <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
                         href="about.html">About Us</a>
                     <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
@@ -175,21 +185,21 @@
             </div>
         </header>
         <main class="flex-grow pt-20">
-            <section
-                class="relative flex min-h-[400px] items-center justify-center overflow-hidden bg-background-dark py-20">
+            <!-- HERO: Rule 2 - seamless bottom fade -->
+            <section class="relative flex min-h-[450px] items-center justify-center overflow-hidden py-24">
                 <div class="absolute inset-0 z-0">
                     <img alt="Dark industrial texture"
-                        class="h-full w-full object-cover object-center grayscale contrast-125 brightness-50"
+                        class="h-full w-full object-cover object-center grayscale contrast-125 brightness-40"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqTxO2KL0PixcN0kHhK4a6MV2s7Y4Q1r6dQSVhCOiWWe_pv70zDOaXUE7bBPtnK6ZSrt2z4lR8FcJXfKKverojBImFagYslqrtfABXs3lBZjTupQhv98rvdLJFKBNRusOOC-eCHzQS56ki-c-OaK4X00_34Li63lIQV4i-M5tTQC2TUlxIZkmilDee4JrbgsHx-X6DFLM-ERK-0GmOCGp4K-eFMpi7S_VS2N-pzE8mAGgim3bVGzy3zC3SDJgmfT3VZ-nQa7z9v_U" />
-                    <div class="absolute inset-0 bg-slate-900/90 mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent">
-                    </div>
+                    <div class="absolute inset-0 bg-slate-900/80 mix-blend-multiply"></div>
+                    <!-- Rule 2: seamless bottom fade -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900"></div>
                     <div class="absolute inset-0 bg-grain opacity-20 mix-blend-overlay"></div>
                 </div>
                 <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                     <div class="inline-flex items-center gap-2 border-b border-primary pb-2 mb-6">
                         <span class="h-2 w-2 bg-primary"></span>
-                        <span class="font-mono-tech text-xl uppercase tracking-[0.2em] text-primary">Legal</span>
+                        <span class="font-mono-tech text-xl uppercase tracking-[0.2em] text-primary">[ Legal ]</span>
                         <span class="h-2 w-2 bg-primary"></span>
                     </div>
                     <h1
@@ -197,113 +207,120 @@
                         Privacy Policy
                     </h1>
                     <p class="mx-auto max-w-2xl text-lg text-slate-400 font-light tracking-wide">
-                        Effective Date: October 2023 - How we handle, protect, and process your data.
+                        Effective Date: October 2023 — How we handle, protect, and process your data.
                     </p>
                 </div>
             </section>
-            <section class="relative border-t border-slate-800 bg-surface-dark py-16 lg:py-20">
-                <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                    <div class="legal-content mb-16">
-                        <p class="text-lg leading-relaxed text-slate-300">
+            <!-- LEGAL CONTENT: Rule 1,3,4 - editorial cards -->
+            <section class="py-16 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+                <div class="space-y-px">
+                    <!-- Intro card -->
+                    <div class="border border-white/10 bg-white/5 p-8 lg:p-10 relative overflow-hidden">
+                        <div class="absolute -top-4 -right-4 opacity-[0.04] pointer-events-none select-none">
+                            <span class="font-display text-[9rem] font-bold text-white leading-none">00</span>
+                        </div>
+                        <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                            Introduction ]</span>
+                        <p class="text-lg leading-relaxed text-slate-300 relative z-10">
                             Apex Industrial Roofing ("we", "our", or "us") is committed to protecting your privacy and
                             ensuring the security of your personal data. This document outlines our Terms of Use,
                             Privacy Policy, and Cookie Policy. By accessing or using our services, you agree to be bound
                             by these terms.
                         </p>
                     </div>
-                    <div class="border-t border-border-tech pt-12 mb-16 legal-content">
-                        <div class="flex items-center gap-4 mb-8">
-                            <span class="font-mono-tech text-4xl text-slate-700">01</span>
-                            <h2 class="!mb-0 !text-3xl">Terms of Service</h2>
+                    <!-- Section 01 -->
+                    <div class="border border-white/10 bg-white/5 p-8 lg:p-10 relative overflow-hidden legal-content">
+                        <div class="absolute -top-4 -right-4 opacity-[0.04] pointer-events-none select-none">
+                            <span class="font-display text-[9rem] font-bold text-white leading-none">01</span>
                         </div>
-                        <p>
-                            Our industrial roofing services are provided subject to the following terms and conditions.
-                            We reserve the right to update these terms at any time without prior notice.
-                        </p>
-                        <h3>1.1 Service Agreement</h3>
-                        <p>
-                            All roofing projects are subject to a formal written quotation. Acceptance of a quotation
-                            constitutes a binding contract between Apex Industrial and the client.
-                        </p>
-                        <ul>
-                            <li>Quotations are valid for 30 days from the date of issue.</li>
-                            <li>Emergency repairs are billed at our standard emergency call-out rates.</li>
-                            <li>Materials remain the property of Apex Industrial until paid for in full.</li>
-                        </ul>
-                        <h3>1.2 Liability</h3>
-                        <p>
-                            While we carry comprehensive public liability insurance, we cannot be held responsible for
-                            pre-existing structural defects that were not visible during our initial inspection.
-                        </p>
+                        <div class="relative z-10">
+                            <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                                Document 01 ]</span>
+                            <h2>Terms of Service</h2>
+                            <p>Our industrial roofing services are provided subject to the following terms and
+                                conditions. We reserve the right to update these terms at any time without prior notice.
+                            </p>
+                            <h3>1.1 Service Agreement</h3>
+                            <p>All roofing projects are subject to a formal written quotation. Acceptance of a quotation
+                                constitutes a binding contract between Apex Industrial and the client.</p>
+                            <ul>
+                                <li>Quotations are valid for 30 days from the date of issue.</li>
+                                <li>Emergency repairs are billed at our standard emergency call-out rates.</li>
+                                <li>Materials remain the property of Apex Industrial until paid for in full.</li>
+                            </ul>
+                            <h3>1.2 Liability</h3>
+                            <p>While we carry comprehensive public liability insurance, we cannot be held responsible
+                                for pre-existing structural defects that were not visible during our initial inspection.
+                            </p>
+                        </div>
                     </div>
-                    <div class="border-t border-border-tech pt-12 mb-16 legal-content">
-                        <div class="flex items-center gap-4 mb-8">
-                            <span class="font-mono-tech text-4xl text-slate-700">02</span>
-                            <h2 class="!mb-0 !text-3xl">Privacy Policy</h2>
+                    <!-- Section 02 -->
+                    <div class="border border-white/10 bg-white/5 p-8 lg:p-10 relative overflow-hidden legal-content">
+                        <div class="absolute -top-4 -right-4 opacity-[0.04] pointer-events-none select-none">
+                            <span class="font-display text-[9rem] font-bold text-white leading-none">02</span>
                         </div>
-                        <p>
-                            We respect your right to privacy. This section explains how we collect, use, and protect
-                            your personal information in compliance with GDPR regulations.
-                        </p>
-                        <h3>2.1 Data Collection</h3>
-                        <p>
-                            We collect data necessary to provide our services and communicate with you effectively. This
-                            may include:
-                        </p>
-                        <ul>
-                            <li>Contact information (Name, Phone Number, Email Address).</li>
-                            <li>Property details and location data for site assessments.</li>
-                            <li>Payment information for processing transactions (handled securely).</li>
-                        </ul>
-                        <h3>2.2 Data Usage</h3>
-                        <p>
-                            Your data is used strictly for operational purposes, including project planning, invoicing,
-                            and warranty registration. We do not sell your data to third parties.
-                        </p>
+                        <div class="relative z-10">
+                            <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                                Document 02 ]</span>
+                            <h2>Privacy Policy</h2>
+                            <p>We respect your right to privacy. This section explains how we collect, use, and protect
+                                your personal information in compliance with GDPR regulations.</p>
+                            <h3>2.1 Data Collection</h3>
+                            <p>We collect data necessary to provide our services and communicate with you effectively.
+                                This may include:</p>
+                            <ul>
+                                <li>Contact information (Name, Phone Number, Email Address).</li>
+                                <li>Property details and location data for site assessments.</li>
+                                <li>Payment information for processing transactions (handled securely).</li>
+                            </ul>
+                            <h3>2.2 Data Usage</h3>
+                            <p>Your data is used strictly for operational purposes, including project planning,
+                                invoicing, and warranty registration. We do not sell your data to third parties.</p>
+                        </div>
                     </div>
-                    <div class="border-t border-border-tech pt-12 mb-16 legal-content">
-                        <div class="flex items-center gap-4 mb-8">
-                            <span class="font-mono-tech text-4xl text-slate-700">03</span>
-                            <h2 class="!mb-0 !text-3xl">Cookie Policy</h2>
+                    <!-- Section 03 -->
+                    <div class="border border-white/10 bg-white/5 p-8 lg:p-10 relative overflow-hidden legal-content">
+                        <div class="absolute -top-4 -right-4 opacity-[0.04] pointer-events-none select-none">
+                            <span class="font-display text-[9rem] font-bold text-white leading-none">03</span>
                         </div>
-                        <p>
-                            Our website uses cookies to enhance user experience and analyze traffic. By continuing to
-                            browse the site, you consent to our use of cookies.
-                        </p>
-                        <h3>3.1 Essential Cookies</h3>
-                        <p>
-                            These are necessary for the website to function properly, such as secure login sessions and
-                            form submissions.
-                        </p>
-                        <h3>3.2 Analytics Cookies</h3>
-                        <p>
-                            We use third-party tools like Google Analytics to understand how visitors interact with our
-                            site. This data is anonymized and used solely for improvement purposes.
-                        </p>
+                        <div class="relative z-10">
+                            <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                                Document 03 ]</span>
+                            <h2>Cookie Policy</h2>
+                            <p>Our website uses cookies to enhance user experience and analyze traffic. By continuing to
+                                browse the site, you consent to our use of cookies.</p>
+                            <h3>3.1 Essential Cookies</h3>
+                            <p>These are necessary for the website to function properly, such as secure login sessions
+                                and form submissions.</p>
+                            <h3>3.2 Analytics Cookies</h3>
+                            <p>We use third-party tools like Google Analytics to understand how visitors interact with
+                                our site. This data is anonymized and used solely for improvement purposes.</p>
+                        </div>
                     </div>
-                    <div class="border-t border-border-tech pt-12 legal-content">
-                        <div class="flex items-center gap-4 mb-8">
-                            <span class="font-mono-tech text-4xl text-slate-700">04</span>
-                            <h2 class="!mb-0 !text-3xl">Contact Compliance</h2>
+                    <!-- Section 04 -->
+                    <div class="border border-white/10 bg-white/5 p-8 lg:p-10 relative overflow-hidden legal-content">
+                        <div class="absolute -top-4 -right-4 opacity-[0.04] pointer-events-none select-none">
+                            <span class="font-display text-[9rem] font-bold text-white leading-none">04</span>
                         </div>
-                        <p>
-                            For any legal inquiries, data protection requests, or to exercise your rights under GDPR,
-                            please contact our Data Protection Officer.
-                        </p>
-                        <div class="mt-8 bg-background-dark border border-slate-700 p-8">
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
+                        <div class="relative z-10">
+                            <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                                Document 04 ]</span>
+                            <h2>Contact Compliance</h2>
+                            <p>For any legal inquiries, data protection requests, or to exercise your rights under GDPR,
+                                please contact our Data Protection Officer.</p>
+                            <div class="grid md:grid-cols-2 gap-px border border-white/10 mt-8">
+                                <div class="bg-slate-900 p-6">
                                     <span
-                                        class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Mailing
+                                        class="block font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-3">Mailing
                                         Address</span>
-                                    <p class="text-white !mb-0">Apex Industrial Roofing Ltd.<br />Legal
+                                    <p class="!mb-0 text-white">Apex Industrial Roofing Ltd.<br />Legal
                                         Department<br />123 High Street, London, SW1A 1AA</p>
                                 </div>
-                                <div>
+                                <div class="bg-slate-900 p-6">
                                     <span
-                                        class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Digital
+                                        class="block font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-3">Digital
                                         Contact</span>
-                                    <p class="text-white !mb-0">Email: <a
+                                    <p class="!mb-0 text-white">Email: <a
                                             class="text-primary hover:text-white transition-colors"
                                             href="mailto:legal@apexroofing.co.uk">legal@apexroofing.co.uk</a><br />Phone:
                                         020 7946 0123</p>
@@ -314,18 +331,20 @@
                 </div>
             </section>
         </main>
-        <footer class="bg-surface-darker border-t border-slate-800 pt-20 pb-10">
+        <footer class="border-t border-white/10 pt-20 pb-10">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 mb-16">
                     <div class="space-y-6">
-                        <div class="flex items-center gap-3">
+                        <a href="index.html" class="flex items-center gap-3 group">
                             <div
-                                class="flex size-10 items-center justify-center border border-slate-700 bg-slate-900 text-primary">
-                                <span class="material-symbols-outlined !text-2xl">roofing</span>
+                                class="flex size-10 items-center justify-center border border-slate-700 bg-slate-900 text-primary group-hover:bg-slate-800 transition-colors">
+                                <span
+                                    class="material-symbols-outlined !text-2xl group-hover:scale-110 transition-transform">roofing</span>
                             </div>
-                            <span class="font-display text-2xl font-bold uppercase tracking-tight text-white">APEX <span
-                                    class="text-primary">Roofing</span></span>
-                        </div>
+                            <span
+                                class="font-display text-2xl font-bold uppercase tracking-tight text-white group-hover:text-slate-200 transition-colors">APEX
+                                <span class="text-primary">Roofing</span></span>
+                        </a>
                         <p class="text-sm text-slate-500 font-light leading-relaxed">London's premier industrial roofing
                             experts. Dedicated to quality craftsmanship and military-grade emergency response.</p>
                         <div class="flex gap-4 pt-2">
@@ -366,26 +385,22 @@
                             class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
                             Contact</h3>
                         <ul class="space-y-5 text-sm text-slate-400">
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span>
-                                <span class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span>
-                                <a class="hover:text-white transition-colors font-display font-bold tracking-wider"
-                                    href="tel:02079460123">020 7946 0123</a>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">mail</span>
-                                <a class="hover:text-white transition-colors tracking-wide"
-                                    href="mailto:info@apexroofing.co.uk">info@apexroofing.co.uk</a>
-                            </li>
+                            <li class="flex items-start gap-3"><span
+                                    class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span><span
+                                    class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span></li>
+                            <li class="flex items-center gap-3"><span
+                                    class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span><a
+                                    class="hover:text-white transition-colors font-display font-bold tracking-wider"
+                                    href="tel:02079460123">020 7946 0123</a></li>
+                            <li class="flex items-center gap-3"><span
+                                    class="material-symbols-outlined text-primary shrink-0 text-lg">mail</span><a
+                                    class="hover:text-white transition-colors tracking-wide"
+                                    href="mailto:info@apexroofing.co.uk">info@apexroofing.co.uk</a></li>
                         </ul>
                     </div>
                 </div>
-                <div
-                    class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p class="text-xs text-slate-600 uppercase tracking-widest font-mono-tech">© 2024 Apex Roofing
+                <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-xs text-slate-600 uppercase tracking-widest font-mono-tech">&copy; 2024 Apex Roofing
                         London Ltd. All rights reserved.</p>
                     <div class="flex gap-8 text-xs text-slate-600 uppercase tracking-widest font-mono-tech">
                         <a class="hover:text-slate-400 transition-colors" href="privacy.html">Privacy Policy</a>

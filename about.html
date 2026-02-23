@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="dark" lang="en">
 
 <head>
@@ -67,10 +67,10 @@
         }
 
         .glass-nav {
-            background: rgba(15, 23, 42, 0.85);
+            background: rgba(10, 13, 20, 0.90);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         ::selection {
@@ -82,11 +82,23 @@
             border-bottom-color: #ea580c;
             box-shadow: none;
         }
+
+        /* Premium Industrial Slate  concrete dust texture */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+            opacity: 0.035;
+            mix-blend-mode: overlay;
+        }
     </style>
 </head>
 
-<body class="bg-background-dark font-body text-text-main antialiased selection:bg-primary selection:text-white">
-    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-grain">
+<body class="bg-slate-900 font-body text-text-main antialiased selection:bg-primary selection:text-white">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <header class="fixed top-0 z-50 w-full glass-nav transition-all duration-300">
             <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center gap-3">
@@ -102,8 +114,6 @@
                     </div>
                 </div>
                 <nav class="hidden md:flex items-center gap-8">
-                    <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
-                        href="index.html">Home</a>
                     <a class="font-display text-sm font-medium text-white transition-colors uppercase tracking-widest border-b-2 border-primary pb-1"
                         href="about.html">About Us</a>
                     <a class="font-display text-sm font-medium text-slate-400 hover:text-white transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-primary pb-1"
@@ -126,21 +136,23 @@
             </div>
         </header>
         <main class="flex-grow pt-20">
-            <section
-                class="relative flex min-h-[400px] items-center justify-center overflow-hidden bg-background-dark py-20">
+            <!-- HERO: Rule 2 - seamless bottom fade into page -->
+            <section class="relative flex min-h-[500px] items-center justify-center overflow-hidden py-24">
                 <div class="absolute inset-0 z-0">
                     <img alt="Professional roofing team on industrial site"
-                        class="h-full w-full object-cover object-center grayscale contrast-125 brightness-50"
+                        class="h-full w-full object-cover object-center grayscale contrast-125 brightness-40"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqTxO2KL0PixcN0kHhK4a6MV2s7Y4Q1r6dQSVhCOiWWe_pv70zDOaXUE7bBPtnK6ZSrt2z4lR8FcJXfKKverojBImFagYslqrtfABXs3lBZjTupQhv98rvdLJFKBNRusOOC-eCHzQS56ki-c-OaK4X00_34Li63lIQV4i-M5tTQC2TUlxIZkmilDee4JrbgsHx-X6DFLM-ERK-0GmOCGp4K-eFMpi7S_VS2N-pzE8mAGgim3bVGzy3zC3SDJgmfT3VZ-nQa7z9v_U" />
-                    <div class="absolute inset-0 bg-slate-900/90 mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent">
-                    </div>
+                    <!-- Multiply layer -->
+                    <div class="absolute inset-0 bg-slate-900/80 mix-blend-multiply"></div>
+                    <!-- Key: seamless bottom fade - Rule 2 -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900"></div>
                     <div class="absolute inset-0 bg-grain opacity-20 mix-blend-overlay"></div>
                 </div>
                 <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                     <div class="inline-flex items-center gap-2 border-b border-primary pb-2 mb-6">
                         <span class="h-2 w-2 bg-primary"></span>
-                        <span class="font-mono-tech text-xl uppercase tracking-[0.2em] text-primary">Our Heritage</span>
+                        <span class="font-mono-tech text-xl uppercase tracking-[0.2em] text-primary">[ Our Heritage
+                            ]</span>
                         <span class="h-2 w-2 bg-primary"></span>
                     </div>
                     <h1
@@ -153,54 +165,76 @@
                     </p>
                 </div>
             </section>
-            <section class="relative border-y border-slate-800 bg-surface-dark py-24 overflow-hidden">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div class="grid gap-16 lg:grid-cols-2 lg:items-center">
-                        <div class="relative group">
+            <!-- HERITAGE SECTION: Rule 1,3,4,5 -->
+            <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <!-- Rule 5: strict 50/50 grid -->
+                <div class="grid gap-0 lg:grid-cols-2 border border-white/10 bg-white/5">
+                    <!-- LEFT: Image -->
+                    <div class="relative group overflow-hidden">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Industrial tools and precision equipment on site"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale contrast-125"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDNh9fVRdy-SM7cB7NADGDgaYspoJSrxYk1YAnWS7e4klCvSbbI8nSFgC2d2NK-JDqlDTHN9CDCoGjLscTDKqUPcMetu1GWEOy7kbeJ1moGp5GmuWJ2ObI8p1oejrrCsjA-TYBlgH-2C-lQz72c3cDVXF8iZauPXvztUwLQQ4FtsxX49xJdfgF6EO2ZY5HzuovfdGyUCTROwVVw4q13-ywi13u-PIYmhS3GUpJBMtnqKsjWjWgxTGmEFIPQn1CBI2hfP43T_9837n" />
                             <div
-                                class="absolute -inset-4 border border-primary/20 bg-slate-800/20 -z-10 skew-x-3 transition-transform group-hover:skew-x-2">
+                                class="absolute inset-0 bg-slate-900/30 group-hover:bg-transparent transition-colors duration-500">
                             </div>
-                            <div
-                                class="relative aspect-[4/3] w-full overflow-hidden border border-slate-700 bg-slate-900">
-                                <img alt="Industrial tools and precision equipment on site"
-                                    class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale contrast-125"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDNh9fVRdy-SM7cB7NADGDgaYspoJSrxYk1YAnWS7e4klCvSbbI8nSFgC2d2NK-JDqlDTHN9CDCoGjLscTDKqUPcMetu1GWEOy7kbeJ1moGp5GmuWJ2ObI8p1oejrrCsjA-TYBlgH-2C-lQz72c3cDVXF8iZauPXvztUwLQQ4FtsxX49xJdfgF6EO2ZY5HzuovfdGyUCTROwVVw4q13-ywi13u-PIYmhS3GUpJBMtnqKsjWjWgxTGmEFIPQn1CBI2hfP43T_9837n" />
-                                <div
-                                    class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500">
-                                </div>
-                                <div
-                                    class="absolute top-0 right-0 p-4 border-l border-b border-slate-600 bg-slate-900/80">
-                                    <span class="font-mono-tech text-2xl text-primary">EST. 1998</span>
-                                </div>
+                            <div class="absolute top-0 right-0 p-4 border-l border-b border-white/10 bg-slate-900/80">
+                                <span class="font-mono-tech text-2xl text-primary">EST. 1998</span>
                             </div>
                         </div>
-                        <div class="space-y-8">
+                    </div>
+                    <!-- RIGHT: Data - Rule 3,4 -->
+                    <div class="p-10 lg:p-14 relative overflow-hidden flex flex-col justify-center">
+                        <!-- Rule 4: depth watermark -->
+                        <div class="absolute -top-4 -right-4 opacity-[0.04] pointer-events-none select-none">
+                            <span class="font-display text-[12rem] font-bold text-white leading-none">01</span>
+                        </div>
+                        <div class="relative z-10 space-y-8">
+                            <!-- Rule 3: micro-label -->
                             <div>
+                                <span
+                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                                    Our Foundation ]</span>
                                 <h2
-                                    class="font-display text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl mb-6">
+                                    class="font-display text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl">
                                     Built To Withstand</h2>
-                                <div class="h-1 w-20 bg-primary mb-6"></div>
-                                <p class="text-lg text-slate-400 font-light leading-relaxed mb-6">
+                                <div class="h-1 w-16 bg-primary mt-4"></div>
+                            </div>
+                            <div>
+                                <span
+                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
+                                    Principle:</span>
+                                <p class="text-slate-400 font-light leading-relaxed">
                                     Apex Industrial was founded on a simple principle: roofs should be engineered, not
                                     just built. Drawing from a heritage of heavy industrial construction, we apply the
                                     same rigorous standards to every project, whether it's a massive warehouse refit or
                                     a residential slate restoration.
                                 </p>
-                                <p class="text-lg text-slate-400 font-light leading-relaxed">
+                            </div>
+                            <div>
+                                <span
+                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
+                                    Method:</span>
+                                <p class="text-slate-400 font-light leading-relaxed">
                                     Our team operates with military-grade precision. We don't cut corners. We don't use
                                     subpar materials. We assess, we plan, and we execute with a level of discipline that
                                     has made us the preferred contractor for London's most demanding property managers.
                                 </p>
                             </div>
-                            <div class="grid grid-cols-2 gap-8 border-t border-slate-700 pt-8">
-                                <div>
-                                    <span class="block font-display text-4xl font-bold text-white mb-1">25+</span>
-                                    <span class="font-mono-tech text-lg text-primary uppercase tracking-wider">Years
+                            <!-- Stats: scannable data -->
+                            <div class="grid grid-cols-2 gap-6 border-t border-white/10 pt-8">
+                                <div class="border-l-2 border-primary pl-4">
+                                    <span class="block font-display text-5xl font-bold text-white">25<span
+                                            class="text-primary">+</span></span>
+                                    <span
+                                        class="font-mono-tech text-sm text-slate-400 uppercase tracking-wider mt-1 block">Years
                                         Experience</span>
                                 </div>
-                                <div>
-                                    <span class="block font-display text-4xl font-bold text-white mb-1">2,500+</span>
-                                    <span class="font-mono-tech text-lg text-primary uppercase tracking-wider">Projects
+                                <div class="border-l-2 border-primary pl-4">
+                                    <span class="block font-display text-5xl font-bold text-white">2,500<span
+                                            class="text-primary">+</span></span>
+                                    <span
+                                        class="font-mono-tech text-sm text-slate-400 uppercase tracking-wider mt-1 block">Projects
                                         Completed</span>
                                 </div>
                             </div>
@@ -208,63 +242,82 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-background-dark py-24 relative">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div class="mb-16 text-center">
+            <!-- GUARANTEES SECTION: Rule 1,3,4 -->
+            <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+                <!-- Rule 4: Depth watermark -->
+                <div
+                    class="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-[0.03]">
+                    <span class="font-display text-[20rem] font-bold text-white leading-none">02</span>
+                </div>
+                <div class="relative z-10">
+                    <!-- Rule 3: editorial section header -->
+                    <div class="mb-16">
+                        <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                            Commitment ]</span>
                         <h2 class="font-display text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl">Our
                             Ironclad Guarantees</h2>
-                        <p class="mt-4 text-primary font-mono-tech text-xl tracking-widest uppercase">Total peace of
+                        <p class="mt-3 text-slate-500 font-mono-tech text-lg tracking-widest uppercase">Total peace of
                             mind. No exceptions.</p>
                     </div>
-                    <div class="grid gap-6 md:grid-cols-3">
+                    <!-- Rule 1: cards with border-white/10 instead of banded backgrounds -->
+                    <div class="grid gap-px md:grid-cols-3 border border-white/10">
                         <div
-                            class="group relative flex flex-col bg-surface-dark border border-slate-700 hover:border-primary transition-all duration-300 p-8">
+                            class="group relative flex flex-col bg-white/5 hover:bg-white/10 transition-all duration-300 p-8">
                             <div
-                                class="mb-6 inline-flex h-16 w-16 items-center justify-center bg-slate-900 border border-slate-600 group-hover:border-primary transition-colors">
+                                class="mb-6 inline-flex h-16 w-16 items-center justify-center border border-white/10 bg-white/5 group-hover:border-primary transition-colors">
                                 <span
                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">verified_user</span>
                             </div>
+                            <span
+                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
+                                01</span>
                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">10-Year Insurance
                                 Backed</h3>
-                            <p class="text-slate-400 font-light leading-relaxed">
+                            <p class="text-slate-400 font-light leading-relaxed flex-grow">
                                 Every major installation comes with a comprehensive 10-year guarantee, backed by
                                 independent insurance. If we're not around, you're still covered.
                             </p>
-                            <div class="mt-auto pt-6 border-t border-slate-800/50 mt-6">
+                            <div class="mt-6 pt-6 border-t border-white/10">
                                 <span class="font-mono-tech text-sm text-primary uppercase tracking-wider">Certificate
                                     Provided</span>
                             </div>
                         </div>
                         <div
-                            class="group relative flex flex-col bg-surface-dark border border-slate-700 hover:border-primary transition-all duration-300 p-8">
+                            class="group relative flex flex-col bg-white/5 hover:bg-white/10 transition-all duration-300 p-8 border-l border-r border-white/10">
                             <div
-                                class="mb-6 inline-flex h-16 w-16 items-center justify-center bg-slate-900 border border-slate-600 group-hover:border-primary transition-colors">
+                                class="mb-6 inline-flex h-16 w-16 items-center justify-center border border-white/10 bg-white/5 group-hover:border-primary transition-colors">
                                 <span
                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">engineering</span>
                             </div>
+                            <span
+                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
+                                02</span>
                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">Master Tradesmen</h3>
-                            <p class="text-slate-400 font-light leading-relaxed">
+                            <p class="text-slate-400 font-light leading-relaxed flex-grow">
                                 No apprentices running the show. Your roof is handled by fully certified, senior
                                 tradesmen with verified qualifications and years of field experience.
                             </p>
-                            <div class="mt-auto pt-6 border-t border-slate-800/50 mt-6">
+                            <div class="mt-6 pt-6 border-t border-white/10">
                                 <span class="font-mono-tech text-sm text-primary uppercase tracking-wider">CSCS &amp;
                                     NVQ Level 3</span>
                             </div>
                         </div>
                         <div
-                            class="group relative flex flex-col bg-surface-dark border border-slate-700 hover:border-primary transition-all duration-300 p-8">
+                            class="group relative flex flex-col bg-white/5 hover:bg-white/10 transition-all duration-300 p-8">
                             <div
-                                class="mb-6 inline-flex h-16 w-16 items-center justify-center bg-slate-900 border border-slate-600 group-hover:border-primary transition-colors">
+                                class="mb-6 inline-flex h-16 w-16 items-center justify-center border border-white/10 bg-white/5 group-hover:border-primary transition-colors">
                                 <span
                                     class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">layers</span>
                             </div>
+                            <span
+                                class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">Guarantee
+                                03</span>
                             <h3 class="font-display text-2xl font-bold uppercase text-white mb-4">Premium Materials</h3>
-                            <p class="text-slate-400 font-light leading-relaxed">
+                            <p class="text-slate-400 font-light leading-relaxed flex-grow">
                                 We source exclusively from top-tier suppliers. Whether it's Welsh slate,
                                 high-performance felt, or lead, we use materials engineered to last.
                             </p>
-                            <div class="mt-auto pt-6 border-t border-slate-800/50 mt-6">
+                            <div class="mt-6 pt-6 border-t border-white/10">
                                 <span class="font-mono-tech text-sm text-primary uppercase tracking-wider">ISO 9001
                                     Sourced</span>
                             </div>
@@ -272,192 +325,206 @@
                     </div>
                 </div>
             </section>
-            <section class="border-y border-slate-800 bg-surface-dark py-24" id="reviews">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
-                        <div>
-                            <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl">
-                                Client Validations</h2>
-                            <p class="mt-2 text-slate-400 font-mono-tech text-lg uppercase tracking-wide">Rated
-                                Excellent across London</p>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex items-center gap-2 bg-slate-900 px-4 py-2 border border-slate-700">
-                                <span class="material-symbols-outlined text-primary text-xl">star</span>
-                                <span class="font-bold text-white">4.9/5</span>
-                                <span class="text-xs text-slate-400 uppercase tracking-wide">Average Rating</span>
-                            </div>
-                        </div>
+            <!-- REVIEWS SECTION: Rule 1,3,4 -->
+            <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="reviews">
+                <div class="border border-white/10 bg-white/5 p-10 lg:p-14 relative overflow-hidden">
+                    <!-- Rule 4: Depth watermark -->
+                    <div class="absolute -bottom-8 -right-4 pointer-events-none select-none opacity-[0.04]">
+                        <span class="font-display text-[12rem] font-bold text-white leading-none">03</span>
                     </div>
-                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        <div class="bg-background-dark border border-slate-700 p-8 relative">
-                            <div class="absolute top-6 right-6 text-slate-700">
-                                <span class="material-symbols-outlined text-4xl">format_quote</span>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+                            <div>
+                                <!-- Rule 3: micro-label -->
+                                <span
+                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                                    Field Reports ]</span>
+                                <h2
+                                    class="font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl">
+                                    Client Validations</h2>
+                                <p class="mt-2 text-slate-400 font-mono-tech text-lg uppercase tracking-wide">Rated
+                                    Excellent across London</p>
                             </div>
-                            <div class="flex items-center gap-2 mb-4 text-primary">
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                            </div>
-                            <p class="text-slate-300 italic mb-6 leading-relaxed">"The level of detail in their report
-                                was outstanding. They identified issues other roofers missed and fixed the leak
-                                permanently. Highly professional crew."</p>
-                            <div class="flex items-center gap-4 border-t border-slate-800 pt-4">
-                                <div
-                                    class="size-10 bg-slate-800 border border-slate-600 flex items-center justify-center text-slate-400 font-bold">
-                                    DT</div>
-                                <div>
-                                    <p class="text-sm font-bold text-white uppercase">David Thomas</p>
-                                    <p class="text-xs text-primary font-mono-tech uppercase">Checkatrade Verified</p>
+                            <div class="flex gap-4">
+                                <div class="flex items-center gap-2 border border-white/10 bg-white/5 px-4 py-2">
+                                    <span class="material-symbols-outlined text-primary text-xl">star</span>
+                                    <span class="font-bold text-white">4.9/5</span>
+                                    <span class="text-xs text-slate-400 uppercase tracking-wide">Average Rating</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-background-dark border border-slate-700 p-8 relative">
-                            <div class="absolute top-6 right-6 text-slate-700">
-                                <span class="material-symbols-outlined text-4xl">format_quote</span>
-                            </div>
-                            <div class="flex items-center gap-2 mb-4 text-primary">
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                            </div>
-                            <p class="text-slate-300 italic mb-6 leading-relaxed">"Apex handled our warehouse guttering
-                                replacement with minimal disruption to operations. The quality of the materials is
-                                visibly superior."</p>
-                            <div class="flex items-center gap-4 border-t border-slate-800 pt-4">
-                                <div
-                                    class="size-10 bg-slate-800 border border-slate-600 flex items-center justify-center text-slate-400 font-bold">
-                                    SL</div>
-                                <div>
-                                    <p class="text-sm font-bold text-white uppercase">Sarah Lewis</p>
-                                    <p class="text-xs text-primary font-mono-tech uppercase">Trustpilot Verified</p>
+                        <div class="grid gap-px md:grid-cols-2 lg:grid-cols-3">
+                            <div
+                                class="bg-slate-900 border border-white/10 p-8 relative hover:border-primary/40 transition-colors">
+                                <div class="absolute top-6 right-6 text-white/5">
+                                    <span class="material-symbols-outlined text-6xl">format_quote</span>
+                                </div>
+                                <div class="flex items-center gap-1 mb-4 text-primary">
+                                    <span class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span>
+                                </div>
+                                <p class="text-slate-300 italic mb-6 leading-relaxed text-sm">"The level of detail in
+                                    their report was outstanding. They identified issues other roofers missed and fixed
+                                    the leak permanently. Highly professional crew."</p>
+                                <div class="flex items-center gap-4 border-t border-white/10 pt-4">
+                                    <div
+                                        class="size-10 bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 font-bold">
+                                        DT</div>
+                                    <div>
+                                        <p class="text-sm font-bold text-white uppercase">David Thomas</p>
+                                        <p class="text-xs text-primary font-mono-tech uppercase">Checkatrade Verified
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bg-background-dark border border-slate-700 p-8 relative">
-                            <div class="absolute top-6 right-6 text-slate-700">
-                                <span class="material-symbols-outlined text-4xl">format_quote</span>
+                            <div
+                                class="bg-slate-900 border border-white/10 p-8 relative hover:border-primary/40 transition-colors">
+                                <div class="absolute top-6 right-6 text-white/5">
+                                    <span class="material-symbols-outlined text-6xl">format_quote</span>
+                                </div>
+                                <div class="flex items-center gap-1 mb-4 text-primary">
+                                    <span class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span>
+                                </div>
+                                <p class="text-slate-300 italic mb-6 leading-relaxed text-sm">"Apex handled our
+                                    warehouse guttering replacement with minimal disruption to operations. The quality
+                                    of the materials is visibly superior."</p>
+                                <div class="flex items-center gap-4 border-t border-white/10 pt-4">
+                                    <div
+                                        class="size-10 bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 font-bold">
+                                        SL</div>
+                                    <div>
+                                        <p class="text-sm font-bold text-white uppercase">Sarah Lewis</p>
+                                        <p class="text-xs text-primary font-mono-tech uppercase">Trustpilot Verified</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-2 mb-4 text-primary">
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                                <span class="material-symbols-outlined text-sm fill-current">star</span>
-                            </div>
-                            <p class="text-slate-300 italic mb-6 leading-relaxed">"Honest, reliable, and incredibly
-                                tidy. They explained exactly what was needed and stuck to the quote. The 10-year
-                                guarantee gives us great peace of mind."</p>
-                            <div class="flex items-center gap-4 border-t border-slate-800 pt-4">
-                                <div
-                                    class="size-10 bg-slate-800 border border-slate-600 flex items-center justify-center text-slate-400 font-bold">
-                                    MR</div>
-                                <div>
-                                    <p class="text-sm font-bold text-white uppercase">Michael Ross</p>
-                                    <p class="text-xs text-primary font-mono-tech uppercase">Google Review</p>
+                            <div
+                                class="bg-slate-900 border border-white/10 p-8 relative hover:border-primary/40 transition-colors">
+                                <div class="absolute top-6 right-6 text-white/5">
+                                    <span class="material-symbols-outlined text-6xl">format_quote</span>
+                                </div>
+                                <div class="flex items-center gap-1 mb-4 text-primary">
+                                    <span class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span><span
+                                        class="material-symbols-outlined text-sm">star</span>
+                                </div>
+                                <p class="text-slate-300 italic mb-6 leading-relaxed text-sm">"Honest, reliable, and
+                                    incredibly tidy. They explained exactly what was needed and stuck to the quote. The
+                                    10-year guarantee gives us great peace of mind."</p>
+                                <div class="flex items-center gap-4 border-t border-white/10 pt-4">
+                                    <div
+                                        class="size-10 bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 font-bold">
+                                        MR</div>
+                                    <div>
+                                        <p class="text-sm font-bold text-white uppercase">Michael Ross</p>
+                                        <p class="text-xs text-primary font-mono-tech uppercase">Google Review</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="relative bg-background-dark py-24">
+            <!-- QUOTE FORM: Rule 1 - no extra colored bg wrapper, form is the card -->
+            <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto relative">
                 <div class="absolute left-0 top-0 h-full w-full overflow-hidden opacity-10 pointer-events-none">
                     <div
                         class="absolute -left-[10%] top-[20%] h-[600px] w-[600px] rounded-full bg-primary blur-[150px]">
                     </div>
                 </div>
-                <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                    <div
-                        class="border border-slate-700 bg-surface-dark p-8 shadow-2xl sm:p-12 relative overflow-hidden">
-                        <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-primary/50"></div>
-                        <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-primary/50"></div>
-                        <div class="mb-12 text-center relative z-10">
-                            <h2 class="font-display text-4xl font-bold uppercase text-white sm:text-5xl">Request Quote
-                            </h2>
-                            <p class="mt-3 text-primary font-mono-tech text-xl tracking-widest uppercase">No obligation.
-                                Fast response guaranteed.</p>
-                        </div>
-                        <form class="space-y-8 relative z-10">
-                            <div class="grid gap-8 sm:grid-cols-2">
-                                <div class="space-y-2 group">
-                                    <label
-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                        for="name">Full Name</label>
-                                    <input
-                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
-                                        id="name" placeholder="John Doe" type="text" />
-                                </div>
-                                <div class="space-y-2 group">
-                                    <label
-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                        for="phone">Phone Number</label>
-                                    <input
-                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
-                                        id="phone" placeholder="07123 456789" type="tel" />
-                                </div>
-                            </div>
-                            <div class="grid gap-8 sm:grid-cols-2">
-                                <div class="space-y-2 group">
-                                    <label
-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                        for="postcode">Postcode</label>
-                                    <input
-                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
-                                        id="postcode" placeholder="E.g. SW1A 1AA" type="text" />
-                                </div>
-                                <div class="space-y-2 group">
-                                    <label
-                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                        for="service">Service Needed</label>
-                                    <select
-                                        class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white focus:ring-0 transition-colors [&amp;&gt;option]:bg-slate-800"
-                                        id="service">
-                                        <option>Emergency Repair</option>
-                                        <option>Roof Inspection</option>
-                                        <option>Guttering</option>
-                                        <option>New Roof</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
+                <div class="relative border border-white/10 bg-white/5 p-8 shadow-2xl sm:p-12 overflow-hidden">
+                    <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-primary/50"></div>
+                    <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-primary/50"></div>
+                    <div class="mb-12 text-center relative z-10">
+                        <span class="font-mono-tech text-xs uppercase tracking-[0.3em] text-primary mb-3 block">[
+                            Initiate Contact ]</span>
+                        <h2 class="font-display text-4xl font-bold uppercase text-white sm:text-5xl">Request Quote</h2>
+                        <p class="mt-3 text-slate-400 font-mono-tech text-xl tracking-widest uppercase">No obligation.
+                            Fast response guaranteed.</p>
+                    </div>
+                    <form class="space-y-8 relative z-10">
+                        <div class="grid gap-8 sm:grid-cols-2">
+                            <div class="space-y-2 group">
+                                <label
+                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                    for="name">Full Name</label>
+                                <input
+                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                    id="name" placeholder="John Doe" type="text" />
                             </div>
                             <div class="space-y-2 group">
                                 <label
                                     class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                    for="message">Tell us about the issue</label>
-                                <textarea
-                                    class="industrial-input w-full border-0 border-b border-slate-600 bg-slate-800/50 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors resize-none"
-                                    id="message" placeholder="Briefly describe the damage or leak..."
-                                    rows="3"></textarea>
+                                    for="phone">Phone Number</label>
+                                <input
+                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                    id="phone" placeholder="07123 456789" type="tel" />
                             </div>
-                            <button
-                                class="mt-8 w-full bg-primary py-5 text-center font-display text-xl font-bold uppercase tracking-widest text-white transition-all hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] border border-transparent"
-                                type="button">
-                                Get Free Quote
-                            </button>
-                            <p class="text-center text-xs text-slate-600 font-mono-tech uppercase tracking-wide">Secure
-                                Data Transmission // Privacy Protected</p>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="grid gap-8 sm:grid-cols-2">
+                            <div class="space-y-2 group">
+                                <label
+                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                    for="postcode">Postcode</label>
+                                <input
+                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                    id="postcode" placeholder="E.g. SW1A 1AA" type="text" />
+                            </div>
+                            <div class="space-y-2 group">
+                                <label
+                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                    for="service">Service Needed</label>
+                                <select
+                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white focus:ring-0 transition-colors [&>option]:bg-slate-900"
+                                    id="service">
+                                    <option>Emergency Repair</option>
+                                    <option>Roof Inspection</option>
+                                    <option>Guttering</option>
+                                    <option>New Roof</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-2 group">
+                            <label
+                                class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                for="message">Tell us about the issue</label>
+                            <textarea
+                                class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors resize-none"
+                                id="message" placeholder="Briefly describe the damage or leak..." rows="3"></textarea>
+                        </div>
+                        <button
+                            class="mt-8 w-full bg-primary py-5 text-center font-display text-xl font-bold uppercase tracking-widest text-white transition-all hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] border border-transparent"
+                            type="button">Get Free Quote</button>
+                        <p class="text-center text-xs text-slate-600 font-mono-tech uppercase tracking-wide">Secure Data
+                            Transmission // Privacy Protected</p>
+                    </form>
                 </div>
             </section>
         </main>
-        <footer class="bg-surface-darker border-t border-slate-800 pt-20 pb-10">
+        <footer class="border-t border-white/10 pt-20 pb-10">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 mb-16">
                     <div class="space-y-6">
-                        <div class="flex items-center gap-3">
+                        <a href="index.html" class="flex items-center gap-3 group">
                             <div
-                                class="flex size-10 items-center justify-center border border-slate-700 bg-slate-900 text-primary">
-                                <span class="material-symbols-outlined !text-2xl">roofing</span>
+                                class="flex size-10 items-center justify-center border border-slate-700 bg-slate-900 text-primary group-hover:bg-slate-800 transition-colors">
+                                <span
+                                    class="material-symbols-outlined !text-2xl group-hover:scale-110 transition-transform">roofing</span>
                             </div>
-                            <span class="font-display text-2xl font-bold uppercase tracking-tight text-white">APEX <span
-                                    class="text-primary">Roofing</span></span>
-                        </div>
+                            <span
+                                class="font-display text-2xl font-bold uppercase tracking-tight text-white group-hover:text-slate-200 transition-colors">APEX
+                                <span class="text-primary">Roofing</span></span>
+                        </a>
                         <p class="text-sm text-slate-500 font-light leading-relaxed">London's premier industrial roofing
                             experts. Dedicated to quality craftsmanship and military-grade emergency response.</p>
                         <div class="flex gap-4 pt-2">
@@ -498,25 +565,21 @@
                             class="mb-6 font-display text-lg font-bold uppercase tracking-widest text-white border-b border-primary/30 pb-2 inline-block">
                             Contact</h3>
                         <ul class="space-y-5 text-sm text-slate-400">
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span>
-                                <span class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span>
-                                <a class="hover:text-white transition-colors font-display font-bold tracking-wider"
-                                    href="tel:02079460123">020 7946 0123</a>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary shrink-0 text-lg">mail</span>
-                                <a class="hover:text-white transition-colors tracking-wide"
-                                    href="mailto:info@apexroofing.co.uk">info@apexroofing.co.uk</a>
-                            </li>
+                            <li class="flex items-start gap-3"><span
+                                    class="material-symbols-outlined text-primary shrink-0 text-lg">location_on</span><span
+                                    class="uppercase tracking-wide">123 High Street, London,<br />SW1A 1AA</span></li>
+                            <li class="flex items-center gap-3"><span
+                                    class="material-symbols-outlined text-primary shrink-0 text-lg">phone</span><a
+                                    class="hover:text-white transition-colors font-display font-bold tracking-wider"
+                                    href="tel:02079460123">020 7946 0123</a></li>
+                            <li class="flex items-center gap-3"><span
+                                    class="material-symbols-outlined text-primary shrink-0 text-lg">mail</span><a
+                                    class="hover:text-white transition-colors tracking-wide"
+                                    href="mailto:info@apexroofing.co.uk">info@apexroofing.co.uk</a></li>
                         </ul>
                     </div>
                 </div>
-                <div
-                    class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p class="text-xs text-slate-600 uppercase tracking-widest font-mono-tech">© 2024 Apex Roofing
                         London Ltd. All rights reserved.</p>
                     <div class="flex gap-8 text-xs text-slate-600 uppercase tracking-widest font-mono-tech">
@@ -527,6 +590,7 @@
                 </div>
             </div>
         </footer>
+
     </div>
 </body>
 
