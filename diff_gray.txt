@@ -1,0 +1,273 @@
+﻿diff --git a/about.html b/about.html
+index 4f9fd3c..5d11fce 100644
+--- a/about.html
++++ b/about.html
+@@ -201,7 +201,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Our
+                                     Principle:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Apex Industrial was founded on a simple principle: roofs should be engineered, not
+@@ -212,7 +212,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Our
+                                     Method:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Our team operates with military-grade precision. We don't cut corners. We don't use
+@@ -226,14 +226,14 @@
+                                     <span class="block font-display text-5xl font-bold text-white">25<span
+                                             class="text-primary">+</span></span>
+                                     <span
+-                                        class="font-mono-tech text-sm text-slate-400 uppercase tracking-wider mt-1 block">Years
++                                        class="uppercase mt-1 text-slate-300 font-bold text-xs tracking-wider block mb-1">Years
+                                         Experience</span>
+                                 </div>
+                                 <div class="border-l-2 border-primary pl-4">
+                                     <span class="block font-display text-5xl font-bold text-white">2,500<span
+                                             class="text-primary">+</span></span>
+                                     <span
+-                                        class="font-mono-tech text-sm text-slate-400 uppercase tracking-wider mt-1 block">Projects
++                                        class="uppercase mt-1 text-slate-300 font-bold text-xs tracking-wider block mb-1">Projects
+                                         Completed</span>
+                                 </div>
+                             </div>
+@@ -348,7 +348,7 @@
+                                 <div class="flex items-center gap-2 border border-white/10 bg-white/5 px-4 py-2">
+                                     <span class="material-symbols-outlined text-primary text-xl">star</span>
+                                     <span class="font-bold text-white">4.9/5</span>
+-                                    <span class="text-xs text-slate-400 uppercase tracking-wide">Average Rating</span>
++                                    <span class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Average Rating</span>
+                                 </div>
+                             </div>
+                         </div>
+diff --git a/flat-roofing.html b/flat-roofing.html
+index 81043ea..faef2e0 100644
+--- a/flat-roofing.html
++++ b/flat-roofing.html
+@@ -243,7 +243,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Root
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Root
+                                     Cause:</span>
+                                 <p class="text-slate-400 font-light leading-relaxed">
+                                     Pooling water. Blistering felt. Seams that split under the London sun. Traditional
+@@ -255,19 +255,19 @@
+                                     <span
+                                         class="material-symbols-outlined text-red-500 shrink-0 mt-0.5 text-sm">close</span>
+                                     <span
+-                                        class="text-slate-400 text-sm font-mono-tech uppercase tracking-wide">Inadequate
++                                        class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Inadequate
+                                         drainage gradients leading to ponding</span>
+                                 </li>
+                                 <li class="flex items-start gap-4 border-l border-red-500/30 pl-4">
+                                     <span
+                                         class="material-symbols-outlined text-red-500 shrink-0 mt-0.5 text-sm">close</span>
+-                                    <span class="text-slate-400 text-sm font-mono-tech uppercase tracking-wide">Cheap
++                                    <span class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Cheap
+                                         bitumen that cracks in winter</span>
+                                 </li>
+                                 <li class="flex items-start gap-4 border-l border-red-500/30 pl-4">
+                                     <span
+                                         class="material-symbols-outlined text-red-500 shrink-0 mt-0.5 text-sm">close</span>
+-                                    <span class="text-slate-400 text-sm font-mono-tech uppercase tracking-wide">Poorly
++                                    <span class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Poorly
+                                         detailed flashing around vents and skylights</span>
+                                 </li>
+                             </ul>
+@@ -292,7 +292,7 @@
+                             </div>
+                             <div>
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Our
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Our
+                                     Systems:</span>
+                                 <p class="text-slate-300 leading-relaxed">
+                                     We don't just patch; we re-engineer. Our flat roofing systems use <strong>GRP
+@@ -303,19 +303,19 @@
+                             <div class="grid grid-cols-2 gap-px border border-white/10">
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">Seamless</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Technology</span>
++                                    <span class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Technology</span>
+                                 </div>
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">25 Year</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Warranty</span>
++                                    <span class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Warranty</span>
+                                 </div>
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">UV Stable</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Coating</span>
++                                    <span class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Coating</span>
+                                 </div>
+                                 <div class="border border-white/10 bg-slate-900 p-4">
+                                     <span class="block font-mono-tech text-xl text-primary mb-1">ISO 9001</span>
+-                                    <span class="text-xs text-slate-500 uppercase tracking-widest">Certified</span>
++                                    <span class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Certified</span>
+                                 </div>
+                             </div>
+                         </div>
+@@ -369,22 +369,22 @@
+                         <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-px border border-white/10">
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Duration</span>
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Duration</span>
+                                 <span class="font-display text-xl font-bold text-white">5 Days</span>
+                             </div>
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Area</span>
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Area</span>
+                                 <span class="font-display text-xl font-bold text-white">450 Sq.M</span>
+                             </div>
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Material</span>
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Material</span>
+                                 <span class="font-display text-xl font-bold text-white">EPDM</span>
+                             </div>
+                             <div class="bg-white/5 p-4">
+                                 <span
+-                                    class="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-500 block mb-1">Budget</span>
++                                    class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Budget</span>
+                                 <span class="font-display text-xl font-bold text-white">┬ú25-30k</span>
+                             </div>
+                         </div>
+@@ -409,7 +409,7 @@
+                                 class="material-symbols-outlined text-sm">star</span>
+                         </div>
+                         <span
+-                            class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Review:</span>
++                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Review:</span>
+                         <h4 class="font-bold text-white uppercase mb-2">"Garage Roof Replacement"</h4>
+                         <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Replaced an old asbestos garage
+                             roof with a new GRP system. The finish is immaculate, absolutely solid. No more leaks during
+@@ -433,7 +433,7 @@
+                                 class="material-symbols-outlined text-sm">star</span>
+                         </div>
+                         <span
+-                            class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Review:</span>
++                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Review:</span>
+                         <h4 class="font-bold text-white uppercase mb-2">"Kitchen Extension Flat Roof"</h4>
+                         <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Apex identified why our extension
+                             was cold and damp. They installed new insulation boards and a rubber roof. The room is
+@@ -457,7 +457,7 @@
+                                 class="material-symbols-outlined text-sm">star</span>
+                         </div>
+                         <span
+-                            class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Review:</span>
++                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Review:</span>
+                         <h4 class="font-bold text-white uppercase mb-2">"Commercial Flat Roof Repair"</h4>
+                         <p class="text-slate-400 italic text-sm mb-8 leading-relaxed">"Fast response to an emergency
+                             leak in our office building. They patched it immediately and quoted for a full resurfacing
+diff --git a/index.html b/index.html
+index 63de427..e437fb4 100644
+--- a/index.html
++++ b/index.html
+@@ -394,7 +394,7 @@
+                                         <span class="material-symbols-outlined text-xl">star</span>
+                                     </div>
+                                     <span
+-                                        class="font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-2 block">Field
++                                        class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Field
+                                         Review:</span>
+                                     <p class="mb-6 text-lg font-medium italic text-slate-300">&ldquo;Had a massive
+                                         leak during the storm last week. Apex arrived within 45 minutes and secured the
+diff --git a/privacy.html b/privacy.html
+index 902570e..a12ec0c 100644
+--- a/privacy.html
++++ b/privacy.html
+@@ -315,14 +315,14 @@
+                             <div class="grid md:grid-cols-2 gap-px border border-white/10 mt-8">
+                                 <div class="bg-slate-900 p-6">
+                                     <span
+-                                        class="block font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-3">Mailing
++                                        class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Mailing
+                                         Address</span>
+                                     <p class="!mb-0 text-white">Apex Industrial Roofing Ltd.<br />Legal
+                                         Department<br />123 High Street, London, SW1A 1AA</p>
+                                 </div>
+                                 <div class="bg-slate-900 p-6">
+                                     <span
+-                                        class="block font-mono-tech text-xs uppercase tracking-[0.3em] text-slate-500 mb-3">Digital
++                                        class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Digital
+                                         Contact</span>
+                                     <p class="!mb-0 text-white">Email: <a
+                                             class="text-primary hover:text-white transition-colors"
+diff --git a/projects.html b/projects.html
+index 2749abe..e32ee4b 100644
+--- a/projects.html
++++ b/projects.html
+@@ -235,13 +235,13 @@
+                                         Restoration</h3>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed mb-6">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Challenge:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Challenge:</strong>
+                                         Severe storm damage compromised the structural integrity of this Grade II listed
+                                         property. Original Welsh slate required matching.
+                                     </p>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Solution:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Solution:</strong>
+                                         Sourced reclaimed slate to match patina. Replaced lead flashings and installed
+                                         modern breathable membrane system underneath.
+                                     </p>
+@@ -288,13 +288,13 @@
+                                         Flat Roof System</h3>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed mb-6">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Challenge:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Challenge:</strong>
+                                         Aging felt system on commercial unit causing internal leaks and water pooling.
+                                         Poor drainage gradient.
+                                     </p>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Solution:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Solution:</strong>
+                                         Installed high-performance EPDM rubber membrane with 20-year guarantee.
+                                         Corrected deck gradient for optimal water runoff.
+                                     </p>
+@@ -339,13 +339,13 @@
+                                         Stabilization</h3>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed mb-6">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Challenge:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Challenge:</strong>
+                                         Dangerous leaning chimney stack with eroded mortar joints threatening public
+                                         safety on street below.
+                                     </p>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Solution:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Solution:</strong>
+                                         Complete take-down and rebuild using original bricks where possible. Installed
+                                         new lead trays and stainless steel flue liners.
+                                     </p>
+@@ -390,13 +390,13 @@
+                                         Guttering</h3>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed mb-6">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Challenge:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Challenge:</strong>
+                                         Existing plastic guttering failed under heavy load, causing damp patches on
+                                         internal walls.
+                                     </p>
+                                     <p class="text-sm text-slate-400 font-light leading-relaxed">
+                                         <strong
+-                                            class="text-slate-300 font-bold uppercase text-xs tracking-wider block mb-1">Solution:</strong>
++                                            class="uppercase text-slate-300 font-bold text-xs tracking-wider block mb-1">Solution:</strong>
+                                         Upgrade to deep-flow metal guttering system with increased downpipe capacity to
+                                         handle torrential rainfall.
+                                     </p>
