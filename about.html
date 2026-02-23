@@ -442,79 +442,87 @@
                 </div>
             </section>
             <!-- QUOTE FORM: Rule 1 - no extra colored bg wrapper, form is the card -->
-            <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto relative">
+            <section class="relative bg-background-dark py-24">
                 <div class="absolute left-0 top-0 h-full w-full overflow-hidden opacity-10 pointer-events-none">
                     <div
                         class="absolute -left-[10%] top-[20%] h-[600px] w-[600px] rounded-full bg-primary blur-[150px]">
                     </div>
                 </div>
-                <div class="relative border border-white/10 bg-white/5 p-8 shadow-2xl sm:p-12 overflow-hidden">
-                    <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-primary/50"></div>
-                    <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-primary/50"></div>
-                    <div class="mb-12 text-center relative z-10">
-                        <span class="font-mono-tech uppercase tracking-widest mb-3 block text-xl text-primary">Initiate
-                            Contact</span>
-                        <h2 class="font-display text-4xl font-bold uppercase text-white sm:text-5xl">Request Quote</h2>
-                        <p class="mt-3 text-slate-400 font-mono-tech text-xl tracking-widest uppercase">No obligation.
-                            Fast response guaranteed.</p>
+                <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="border border-slate-700 bg-surface-dark p-8 shadow-2xl sm:p-12 relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-primary/50"></div>
+                        <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-primary/50"></div>
+                        <div class="mb-12 text-center relative z-10">
+                            <span
+                                class="font-mono-tech uppercase tracking-widest mb-3 block text-xl text-primary">Initiate
+                                Contact</span>
+                            <h2 class="font-display text-4xl font-bold uppercase text-white sm:text-5xl">Request Quote
+                            </h2>
+                            <p class="mt-3 text-slate-400 font-mono-tech text-xl tracking-widest uppercase">No
+                                obligation.
+                                Fast response guaranteed.</p>
+                        </div>
+                        <form class="space-y-8 relative z-10">
+                            <div class="grid gap-8 sm:grid-cols-2">
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="name">Full Name</label>
+                                    <input
+                                        class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                        id="name" placeholder="John Doe" type="text" />
+                                </div>
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="phone">Phone Number</label>
+                                    <input
+                                        class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                        id="phone" placeholder="07123 456789" type="tel" />
+                                </div>
+                            </div>
+                            <div class="grid gap-8 sm:grid-cols-2">
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="postcode">Postcode</label>
+                                    <input
+                                        class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
+                                        id="postcode" placeholder="E.g. SW1A 1AA" type="text" />
+                                </div>
+                                <div class="space-y-2 group">
+                                    <label
+                                        class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                        for="service">Service Needed</label>
+                                    <select
+                                        class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white focus:ring-0 transition-colors [&>option]:bg-slate-900"
+                                        id="service">
+                                        <option>Emergency Repair</option>
+                                        <option>Roof Inspection</option>
+                                        <option>Guttering</option>
+                                        <option>New Roof</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space-y-2 group">
+                                <label
+                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
+                                    for="message">Tell us about the issue</label>
+                                <textarea
+                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors resize-none"
+                                    id="message" placeholder="Briefly describe the damage or leak..."
+                                    rows="3"></textarea>
+                            </div>
+                            <button
+                                class="mt-8 w-full bg-primary py-5 text-center font-display text-xl font-bold uppercase tracking-widest text-white transition-all hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] border border-transparent"
+                                type="button">Get Free Quote</button>
+                            <p class="text-center text-xs text-slate-600 font-mono-tech uppercase tracking-wide">Secure
+                                Data
+                                Transmission // Privacy Protected</p>
+                        </form>
                     </div>
-                    <form class="space-y-8 relative z-10">
-                        <div class="grid gap-8 sm:grid-cols-2">
-                            <div class="space-y-2 group">
-                                <label
-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                    for="name">Full Name</label>
-                                <input
-                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
-                                    id="name" placeholder="John Doe" type="text" />
-                            </div>
-                            <div class="space-y-2 group">
-                                <label
-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                    for="phone">Phone Number</label>
-                                <input
-                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
-                                    id="phone" placeholder="07123 456789" type="tel" />
-                            </div>
-                        </div>
-                        <div class="grid gap-8 sm:grid-cols-2">
-                            <div class="space-y-2 group">
-                                <label
-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                    for="postcode">Postcode</label>
-                                <input
-                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors"
-                                    id="postcode" placeholder="E.g. SW1A 1AA" type="text" />
-                            </div>
-                            <div class="space-y-2 group">
-                                <label
-                                    class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                    for="service">Service Needed</label>
-                                <select
-                                    class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white focus:ring-0 transition-colors [&>option]:bg-slate-900"
-                                    id="service">
-                                    <option>Emergency Repair</option>
-                                    <option>Roof Inspection</option>
-                                    <option>Guttering</option>
-                                    <option>New Roof</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="space-y-2 group">
-                            <label
-                                class="text-xs font-bold uppercase tracking-widest text-slate-500 group-focus-within:text-primary transition-colors"
-                                for="message">Tell us about the issue</label>
-                            <textarea
-                                class="industrial-input w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-colors resize-none"
-                                id="message" placeholder="Briefly describe the damage or leak..." rows="3"></textarea>
-                        </div>
-                        <button
-                            class="mt-8 w-full bg-primary py-5 text-center font-display text-xl font-bold uppercase tracking-widest text-white transition-all hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] border border-transparent"
-                            type="button">Get Free Quote</button>
-                        <p class="text-center text-xs text-slate-600 font-mono-tech uppercase tracking-wide">Secure Data
-                            Transmission // Privacy Protected</p>
-                    </form>
                 </div>
             </section>
         </main>
