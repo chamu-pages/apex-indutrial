@@ -1,0 +1,31 @@
+# Apex Industrial Roofing - LLM Guide
+
+> This file is intended to help Large Language Models and AI Assistants navigate the Apex Industrial Roofing website.
+
+## Core Identity
+**Name:** Apex Industrial Roofing
+**Slogan:** London's premier industrial roofing experts. Dedicated to quality craftsmanship and military-grade emergency response.
+**Contact Phone:** 020 7946 0123
+**Contact Email:** info@apexroofing.co.uk
+**Location:** 123 High Street, London, SW1A 1AA
+
+## Site Structure Map
+- **Home (/)**: Main landing page, emergency services overview, request quote form.
+- **About Us (/about.html)**: Company heritage, ironclad guarantees, core principles, and client reviews.
+- **Projects (/projects.html)**: Project portfolio featuring before/after sliders of recent industrial jobs.
+- **Flat Roofing (/flat-roofing.html)**: Detailed service page for precision flat roofing, materials used (GRP, EPDM), and service areas map.
+- **Privacy Policy (/privacy.html)**: Legal terms, data collection policy, and cookie usage.
+
+## Services Offered
+- Emergency Repairs
+- Flat Roofing (GRP Fiberglass, EPDM Rubber)
+- Slate & Tiling
+- Guttering
+- Commercial Roofing
+
+## Service Areas
+- Central London
+- North London
+- East London
+- South West
+- Greater London (Kensington & Chelsea, Hammersmith, Greenwich, Hackney, Wandsworth, Islington)
