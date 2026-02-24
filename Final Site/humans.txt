@@ -1,0 +1,11 @@
+/* TEAM */
+  Developer: Built by AI (Antigravity Assistant)
+  Contact: info@apexroofing.co.uk
+  From: London, UK
+
+/* SITE */
+  Last update: 2024
+  Standards: HTML5, CSS3
+  Components: Tailwind CSS (Utility-First System)
+  Typography: Oswald, Teko, Inter (Google Fonts)
+  Icons: Material Symbols (Google Fonts)
