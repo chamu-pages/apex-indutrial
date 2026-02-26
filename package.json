@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify"
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/style.min.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.min.css --minify"
   },
   "repository": {
     "type": "git",
